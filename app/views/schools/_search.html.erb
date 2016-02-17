@@ -1,0 +1,6 @@
+<div class="row">
+  <%= form_tag(search_path, method: :get) do  %>
+      <%= autocomplete_field_tag :query, params[:query], autocomplete_school_school_name_schools_path, {class: 'search-query', placeholder: "Start typing", type: "Search"}%>
+      <%= submit_tag 'Search', class: 'btn btn-primary' %>
+  <% end %>
+</div>

@@ -1,0 +1,40 @@
+<div class="approved">
+  <% if !@school.approved? %>
+    <p> The school will be available for the general public to see once the admin approves it. Thanks for using schools.com </p>
+    <p>By the way, since it isn't approved, you can delete it if you don't like it or edit it better</p>
+  <% end %>
+</div>
+<p class = "show_schools">
+   <h1 class="school_name"><%= @school.name %></h1>
+    <% if !@school.picture_url.nil? %>
+      <%= render 'schools/with_picture' %>
+    <% else %>
+      <%= render 'schools/without_picture' %>
+    <% end %>
+</p>
+<div class="img-responsive">
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@school.latitude}%2C#{@school.longitude}" %>
+</div>
+</br>
+
+<% if logged_in? %>
+  <% if current_user.admin? %>
+    <%= link_to "Edit", edit_school_path, 'data-no-turbolink' => true %> | 
+    <%= link_to "Delete", @school, method: :delete, data: {confirm: "Are you sure?"} %> | 
+    <%= link_to "Back", schools_path %>
+  <% end %>
+<% end %>
+
+<% if !logged_in? %>
+  <% if !@school.approved? %>
+    <%= link_to "Edit", edit_school_path %>
+  <% end %>
+<% end %>
+
+   <div class="container marketing">
+     <div class="row row-centered">
+     <h2>Nearby Schools</h2>
+        <%= render 'schools/nearby_schools' %>
+    </div>
+    </div>
+    

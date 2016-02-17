@@ -1,0 +1,13 @@
+<!-- This will be used as a partial for the school's description and facilitites#
+Should be right-justified, and have a borders. If there's ned for a carousel of school's pictures,
+it should be kept here -->
+
+<div class = "description">
+<% if !@school.picture_url.nil? %>
+	<%= render 'shared/carousel' %>
+<% end %>
+<h3>Description</h3>
+	<section>
+		<%= @school.description %>
+	</section>
+</div>

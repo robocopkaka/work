@@ -1,0 +1,3144 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--font-family: 'Open Sans', sans-serif;*/
+/* line 8, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+body {
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+}
+
+/* line 13, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+body a {
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+}
+
+/* line 20, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 23, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+p {
+  margin: 0;
+}
+
+/* line 26, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+ul, label {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 30, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+body a:hover {
+  text-decoration: none;
+}
+
+/* line 33, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+ol.breadcrumb {
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+
+/* line 37, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+ol.breadcrumb li a {
+  color: #ed645c;
+  font-weight: 500;
+}
+
+/* line 41, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+ol.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+/*--banner--*/
+/* line 45, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.header {
+  padding: 1.5em 0;
+}
+
+/* line 48, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.logo {
+  float: left;
+}
+
+/* line 51, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.logo h1 a {
+  font-family: 'Audiowide', cursive;
+  color: #ed645c;
+  font-weight: 600;
+}
+
+/* line 56, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.top-menu {
+  float: right;
+}
+
+/* line 59, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.top-menu ul li {
+  display: inline-block;
+}
+
+/* line 62, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.top-menu ul li a {
+  color: #333;
+  padding: 5px 0px 5px 18px;
+  display: block;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* line 69, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.top-menu ul li a:hover, .top-menu ul li.active a {
+  color: #ed645c;
+}
+
+/* line 72, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.strip {
+  background: #ed645c;
+  padding: 1.3em 1em;
+}
+
+/* line 76, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.search {
+  position: relative;
+  background: #f3f4f5;
+  float: left;
+  width: 32%;
+  border-radius: 5px;
+}
+
+/* line 83, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.search form {
+  width: 100%;
+}
+
+/* line 86, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.search input[type="text"] {
+  margin: 0px 0;
+  padding: 6px 10px 6px 15px;
+  outline: none;
+  color: #5a5a5a;
+  background: none;
+  border: none;
+  width: 89.33333%;
+  position: relative;
+  font-size: 1em;
+  -webkit-appearance: none;
+}
+
+/* line 98, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.search input[type="submit"] {
+  background: url(/assets/work/images/search1-7b7e4895f880d1b832e356042f704cda11d1e3ae131c921e521920a1c0b9fa26.png) no-repeat 0px 1px;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  outline: none;
+  position: absolute;
+  height: 24px;
+  top: 3px;
+  right: 8px;
+}
+
+/* line 109, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.social {
+  float: right;
+}
+
+/* line 112, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.social i {
+  width: 27px;
+  height: 27px;
+  background: url(/assets/work/images/social-795f95ae532fe7943115fd7e07d00bb72b913e36437acbdef918cf0f3eea8066.png) no-repeat 0px 0px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* line 119, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.facebook {
+  background-position: -3px -2px;
+}
+
+/* line 122, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.twitter {
+  background-position: -43px -3px;
+}
+
+/* line 125, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.dribble {
+  background-position: -83px -3px;
+}
+
+/* line 128, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.google {
+  background-position: -126px -2px;
+}
+
+/* line 131, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.youtube {
+  background-position: -167px -3px;
+}
+
+/* line 134, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.facebook:hover {
+  background-position: -3px -36px;
+}
+
+/* line 137, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.twitter:hover {
+  background-position: -43px -36px;
+}
+
+/* line 140, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.dribble:hover {
+  background-position: -83px -36px;
+}
+
+/* line 143, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.google:hover {
+  background-position: -126px -36px;
+}
+
+/* line 146, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+a i.youtube:hover {
+  background-position: -167px -36px;
+}
+
+/* line 149, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner img, .banner-btm_grid1 img {
+  width: 100%;
+}
+
+/* line 152, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-bottom-grids {
+  margin: 2em 0;
+}
+
+/* line 155, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.clr2 {
+  background: #858582;
+}
+
+/* line 158, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.clr3 {
+  background: #858582;
+}
+
+/* line 161, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.clr4 {
+  background: #eee;
+}
+
+/* line 164, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-text-info i.icon1 {
+  background: url(/assets/work/images/cl4-241c8b20a5c99b5fbd2dc8d9721ededabf83c2ab5e4aef94e2a5f32c6d40d9fe.png) no-repeat 0px 0px;
+  display: inline-block;
+  width: 50px;
+  height: 53px;
+  margin: 42px 0 0 12px;
+}
+
+/* line 171, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-text-info i.icon2 {
+  background: url(/assets/work/images/cl3-cce78bbf7092d354a7bca706d6be66e3b842ccbd2c288944f8313698668fa7e6.png) no-repeat 0px 0px;
+  display: inline-block;
+  width: 50px;
+  height: 53px;
+  margin: 42px 0 0 20px;
+}
+
+/* line 178, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-text-info i.icon3 {
+  background: url(/assets/work/images/cl-434603518c3b369299d089ac4b24959c76263e93858f8197c83e8b39f6c2c56c.png) no-repeat 0px 0px;
+  display: inline-block;
+  width: 50px;
+  height: 53px;
+  margin: 42px 0 0 15px;
+}
+
+/* line 185, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-text-info i.icon4 {
+  background: url(/assets/work/images/cl2-fc9cadb771d9afdb4d4349d1f9cdee81349da1bfe3c8cb79d17374737e3628be.png) no-repeat 0px 0px;
+  display: inline-block;
+  width: 50px;
+  height: 53px;
+  margin: 42px 0 0 20px;
+}
+
+/* line 192, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.bnr-text h3 {
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 7px;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 198, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.bnr-text p {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+/* line 202, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-text-info {
+  padding: 0;
+}
+
+/* line 205, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-text-info.clr1 {
+  margin: 0 1% 0 0;
+  width: 49%;
+  background: #ee987f;
+}
+
+/* line 210, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-text-info.clr2 {
+  margin: 0 0 0 1%;
+  width: 49%;
+  background: rgba(24, 103, 160, 0.88);
+}
+
+/* line 215, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-text-info.clr3 {
+  margin: 2% 1% 0 0;
+  width: 49%;
+  background: #ed645c;
+}
+
+/* line 220, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-text-info.clr4 {
+  margin: 2% 0 0 1%;
+  width: 49%;
+  background: #95BAB4;
+}
+
+/* line 225, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.bnr-text {
+  padding: 0px 0 26px 19px;
+}
+
+/* line 228, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.btm {
+  margin-top: 2em;
+}
+
+/* line 231, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-btm_grid1 {
+  padding: 0;
+  width: 49%;
+}
+
+/* line 235, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.welcome {
+  margin: 4em 0;
+  text-align: center;
+}
+
+/* line 239, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.welcome h3 {
+  color: #7EC259;
+  font-size: 3.5em;
+  margin: 0 0 12px 0;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 245, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.welcome p {
+  line-height: 1.6em;
+  color: #999;
+}
+
+/* line 249, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.welcome h4 {
+  color: #111212;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+/*--- slider-css --*/
+/* line 256, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 264, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* line 272, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+/* line 277, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+/* line 284, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-info {
+  width: 56%;
+  position: absolute;
+  top: 31%;
+  left: 0%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.61);
+  padding: 2em;
+}
+
+/* line 293, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-info h3 {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+/* line 299, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.banner-info p {
+  color: #FFF;
+  line-height: 1.8em;
+  font-size: 1.15em;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 0 1.5em 0;
+}
+
+/*-- content --*/
+/* line 309, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.content-grid1 {
+  padding: 0;
+  width: 32.15%;
+}
+
+/* line 313, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.content-grid1:nth-child(2) {
+  padding: 0;
+  margin: 0 20px;
+}
+
+/* line 317, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.content-grid1 img {
+  width: 100%;
+}
+
+/* line 320, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.content-grid1 h3 {
+  color: #ed645c;
+  font-size: 1.4em;
+  margin: 12px 0 8px 0;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 326, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.content-grid1 p {
+  line-height: 1.8em;
+  color: #999;
+}
+
+/* line 330, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.content-grid1 a {
+  color: #2c3134;
+  display: inline-block;
+  margin-top: 0.7em;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* line 337, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.content-grid1 a:hover {
+  color: #ed645c;
+}
+
+/*-- content-info --*/
+/* line 341, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.content-info {
+  margin: 3em 0;
+}
+
+/* line 344, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.welcome-pic h3, .coach h3, .popular h3 {
+  color: #ed645c;
+  font-size: 1.85em;
+  font-family: 'Audiowide', cursive;
+  margin: 0 0 12px 0;
+}
+
+/* line 350, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.popular ul li {
+  padding: 5px 0;
+  list-style-image: url(../images/marker.png);
+  margin: 0 0px 10px 0px;
+  vertical-align: bottom;
+}
+
+/* line 356, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.popular ul li a {
+  display: block;
+  color: #999;
+}
+
+/* line 360, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.popular ul li a:hover {
+  color: #ed645c;
+}
+
+/* line 363, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.welcome-pic h4 {
+  color: #2c3134;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 0.7em;
+}
+
+/* line 369, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+p.last-info {
+  margin-top: 1.4em;
+}
+
+/* line 372, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.welcome-pic img {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+/* line 376, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.welcome-pic p {
+  line-height: 1.6em;
+  color: #999;
+}
+
+/* line 380, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.coach {
+  background: #000;
+  padding: 25px 25px 30px 25px;
+}
+
+/* line 384, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.chr {
+  margin: 2em 0;
+  padding-bottom: 2em;
+}
+
+/* line 388, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.chr {
+  border-bottom: 1px solid #fff;
+}
+
+/* line 391, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.coach-pic {
+  float: left;
+  width: 20%;
+  margin-right: 3%;
+}
+
+/* line 396, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.coach-pic img {
+  width: 100%;
+}
+
+/* line 399, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.coach-pic-info {
+  float: left;
+  width: 77%;
+}
+
+/* line 403, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.coach-pic-info h4 a {
+  color: #fff;
+  font-size: 1em;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+/* line 409, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.coach-pic-info h4 a:hover {
+  color: #ed645c;
+}
+
+/* line 412, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.coach-pic-info h5 {
+  color: #ed645c;
+  margin-bottom: 4px;
+}
+
+/* line 416, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.coach-pic-info p {
+  color: #999;
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+
+/*-- footer --*/
+/* line 422, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.footer {
+  border-top: 1px solid #000;
+  padding: 2em 0;
+}
+
+/* line 426, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.copywrite {
+  float: left;
+  padding-top: 5px;
+}
+
+/* line 430, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.footer-menu {
+  float: right;
+}
+
+/* line 433, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.footer-menu ul li {
+  display: inline-block;
+}
+
+/* line 436, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.footer-menu ul li a {
+  display: block;
+  color: #2c3134;
+  padding: 5px 10px 5px;
+}
+
+/* line 441, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.copywrite p a, .footer-menu ul li a:hover {
+  color: #ed645c;
+}
+
+/* line 444, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.copywrite p a:hover {
+  color: #000;
+}
+
+/*-- About --*/
+/* line 448, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about h2 {
+  margin-top: 1.5em;
+  font-size: 2.1em;
+  font-weight: 500;
+  color: #ed645c;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 455, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about-head {
+  margin-top: 1em;
+}
+
+/* line 458, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about-head p {
+  line-height: 1.8em;
+  color: #999;
+}
+
+/* line 462, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about-grids {
+  margin-top: 2em;
+}
+
+/* line 465, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about-grid h3 {
+  color: #ed645c;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 472, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about-grid {
+  width: 58%;
+  float: left;
+  margin-right: 2%;
+}
+
+/* line 477, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about-pic {
+  float: left;
+  width: 40%;
+}
+
+/* line 481, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about-pic img {
+  width: 100%;
+}
+
+/* line 484, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about-grid p {
+  line-height: 1.8em;
+  color: #999;
+  margin-top: 1em;
+}
+
+/* line 489, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+p.abt-info {
+  color: #999;
+  line-height: 1.7em;
+  font-weight: 600;
+}
+
+/* line 494, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.about-grid a {
+  color: #ed645c;
+  font-size: 1.3em;
+  font-weight: 500;
+  display: block;
+  margin-top: 0.5em;
+}
+
+/* line 501, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.abt_text {
+  margin: 3em 0;
+}
+
+/* line 504, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.values {
+  padding-left: 0;
+}
+
+/* line 507, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.values h3, .skills h3, .testi h3 {
+  color: #ed645c;
+  font-size: 2.1em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 514, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.values span {
+  display: inline-block;
+  letter-spacing: 1px;
+  color: #494949;
+  font-style: italic;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* line 522, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.values h4, .skills h4 {
+  text-transform: uppercase;
+  line-height: 1.5em;
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+/* line 529, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.values p {
+  line-height: 1.6em;
+  color: #999;
+  margin-top: 0.6em;
+  font-size: 1.2em;
+}
+
+/* line 535, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.value-grd {
+  margin-bottom: 1.5em;
+}
+
+/* line 538, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.skills p {
+  line-height: 1.6em;
+  color: #999;
+  margin-top: 0.6em;
+  font-size: 1.2em;
+}
+
+/* line 544, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.skills ul {
+  margin-top: 1em;
+}
+
+/* line 547, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.skills ul li {
+  padding: 5px 0;
+  list-style-image: url(../images/marker.png);
+  margin: 0 0px 10px 20px;
+  vertical-align: bottom;
+}
+
+/* line 553, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.skills ul li a {
+  color: #999;
+  font-size: 1.1em;
+}
+
+/* line 557, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.skills ul li a:hover {
+  color: #ed645c;
+}
+
+/* line 560, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.testi p {
+  line-height: 1.6em;
+  color: #999;
+  margin-top: 0.6em;
+  background: url(/assets/work/images/t-c15ac1052ea51ae87065d3cee34a53c98992f14d27a8e99795c76248204b0352.png) no-repeat 0px 0px;
+  padding: 0 0px 5px 40px;
+  font-size: 1.1em;
+}
+
+/* line 568, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.testi a {
+  padding: 0 0px 10px 40px;
+  display: block;
+  font-size: 1.2em;
+  color: #2c3134;
+}
+
+/* line 574, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.testi a:hover {
+  color: #ed645c;
+}
+
+/*gallery*/
+/* line 578, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.gallery-text h2, .events-sec h2 {
+  color: #ed645c;
+  margin-bottom: 0.5em;
+  font-size: 2.1em;
+  margin-top: 1.5em;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 585, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.gallery-text p {
+  color: #7c7c7c;
+  font-size: 1em;
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+/* line 591, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album {
+  display: block;
+}
+
+/* line 594, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album.top {
+  margin-top: 6%;
+}
+
+/* line 597, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album li {
+  float: left;
+  width: 22%;
+  margin: 0 0 0% 4%;
+  position: relative;
+}
+
+/* line 603, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album li img {
+  border: 2px solid #252525;
+}
+
+/* line 606, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album li:first-child {
+  margin-left: 0;
+}
+
+/* line 609, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album li > a,
+.lb-album li > a img {
+  display: block;
+}
+
+/* line 613, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album li > a {
+  position: relative;
+}
+
+/* line 616, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album li > a span {
+  position: absolute;
+  bottom: 70px;
+  left: 110px;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+/* line 629, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album li > a img:hover {
+  opacity: 0.6;
+}
+
+/* line 632, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-album li > a:hover span {
+  opacity: 1;
+  background: url(/images/work/images/zoom.png) no-repeat;
+  filter: alpha(opacity=99);
+  /* internet explorer */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+  /*IE8*/
+}
+
+/* line 638, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.gallery ul {
+  padding: 0;
+}
+
+/* line 641, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.main {
+  margin-top: 3em;
+}
+
+/* line 644, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-overlay {
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  z-index: 99;
+  text-align: center;
+  background: rgba(24, 23, 23, 0.91);
+}
+
+/* line 656, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-overlay a.lb-close {
+  background: rgba(27, 54, 81, 0.8);
+  z-index: 1001;
+  position: absolute;
+  right: 29%;
+  top: 6%;
+  width: 36px;
+  height: 36px;
+  background: url(/assets/work/images/close-0f5ebdb08ce16efe06c80b7a296c23624ad2bff06da5894b5a056d859f2cbc6c.png) no-repeat;
+  overflow: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* internet explorer */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  -webkit-transition: opacity 0.3s linear 1.2s;
+  -moz-transition: opacity 0.3s linear 1.2s;
+  -o-transition: opacity 0.3s linear 1.2s;
+  -ms-transition: opacity 0.3s linear 1.2s;
+  transition: opacity 0.3s linear 1.2s;
+}
+
+/* line 675, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-overlay img {
+  position: relative;
+}
+
+/* line 678, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0px;
+  right: 0px;
+  padding: 80px 100px 120px 100px;
+}
+
+/* line 685, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-overlay:target img {
+  -webkit-animation: scaleDown 1.2s ease-in-out;
+  -moz-animation: scaleDown 1.2s ease-in-out;
+  -o-animation: scaleDown 1.2s ease-in-out;
+  -ms-animation: scaleDown 1.2s ease-in-out;
+  animation: scaleDown 1.2s ease-in-out;
+  display: inline-block;
+}
+
+/* line 693, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.lb-overlay:target a.lb-close,
+.lb-overlay:target > div {
+  opacity: 1;
+  filter: alpha(opacity=99);
+  /* internet explorer */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+  /*IE8*/
+}
+
+@-webkit-keyframes scaleDown {
+  0% {
+    -webkit-transform: scale(10, 10);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes scaleDown {
+  0% {
+    -moz-transform: scale(10, 10);
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-o-keyframes scaleDown {
+  0% {
+    -o-transform: scale(10, 10);
+    opacity: 0;
+  }
+  100% {
+    -o-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-ms-keyframes scaleDown {
+  0% {
+    -ms-transform: scale(10, 10);
+    opacity: 0;
+  }
+  100% {
+    -ms-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes scaleDown {
+  0% {
+    transform: scale(10, 10);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+/* line 719, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+x:-o-prefocus, .lb-overlay img {
+  height: 100%;
+}
+
+/* line 722, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.gallery ul li {
+  display: inline-block;
+  margin-bottom: 3%;
+}
+
+/*-- 404 --*/
+/* line 727, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.error {
+  padding: 6em 0 8em;
+  min-height: 700px;
+}
+
+/* line 731, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.error-main h3 {
+  color: #ed645c;
+  font-size: 150px;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* line 737, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.error-main {
+  text-align: center;
+}
+
+/* line 740, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.error-main h3 span {
+  font-size: 50px;
+  display: inline-block;
+  margin: 3em 0 0;
+  color: rgba(122, 122, 118, 0.7);
+}
+
+/* line 746, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.error-main h5 {
+  font-size: 30px;
+  color: #C2CCCC;
+  margin: 3% 0 0;
+}
+
+/* line 751, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.error-main p {
+  font-size: 20px;
+  margin: 1em 0 3em;
+  color: #040404;
+}
+
+/* line 756, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.error-main a {
+  background: #C1C1C1;
+  color: #fff;
+  font-size: 17px;
+  padding: .5em 2em;
+  text-decoration: none;
+  transition: .5s all;
+  border: 2px solid #fff;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -o-transition: .5s all;
+  -ms-transition: .5s all;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+
+/* line 774, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.error-main a:hover {
+  text-decoration: none;
+  color: #ed645c;
+  background: #F5F5F5;
+  border: 2px solid #ed645c;
+}
+
+/*-- //404 --*/
+/*-- events --*/
+/* line 782, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grids {
+  margin: 3em 0;
+}
+
+/* line 785, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grid:nth-child(1) {
+  padding-left: 0;
+}
+
+/* line 788, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grids-left {
+  padding-left: 0;
+}
+
+/* line 791, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-pic {
+  float: left;
+  width: 47%;
+  margin-right: 3%;
+}
+
+/* line 796, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-pic img {
+  width: 100%;
+}
+
+/* line 799, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.date {
+  display: inline-block;
+  margin-right: 7%;
+  text-align: center;
+  float: left;
+  width: 20%;
+}
+
+/* line 806, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.date h3 {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+/* line 810, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.date span {
+  display: block;
+  font-size: 1.3em;
+}
+
+/* line 814, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-info {
+  width: 72%;
+  float: left;
+  padding-top: 9px;
+}
+
+/* line 819, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-info h4 a {
+  color: #333;
+  font-size: 1em;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+/* line 825, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-pic-info {
+  width: 50%;
+  float: left;
+}
+
+/* line 829, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-info p {
+  line-height: 1.5em;
+  color: #999;
+}
+
+/* line 833, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.ftrd-head {
+  margin-top: 4em;
+}
+
+/* line 836, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.ftrd-head h3 {
+  color: #ed645c;
+  margin-bottom: 7px;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 841, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grid_pic h3 a {
+  color: #ed645c;
+  margin: 0.5em 0;
+  font-size: 0.8em;
+  display: block;
+}
+
+/* line 847, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grid_pic h3 a:hover {
+  color: #000;
+}
+
+/* line 850, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grid_pic img {
+  width: 100%;
+}
+
+/* line 853, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grid_pic p {
+  line-height: 1.5em;
+  color: #999;
+  margin-bottom: 1em;
+}
+
+/* line 858, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grid_pic a {
+  color: #333;
+}
+
+/* line 861, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grid_pic a:hover, .event_gal h4 a:hover {
+  color: #ed645c;
+}
+
+/* line 864, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-time {
+  background: #eee;
+  padding: 0.5em;
+  display: inline-block;
+  width: 40%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+/* line 872, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event-grid-sec:hover div.event-time {
+  background: #ed645c;
+  color: #fff;
+}
+
+/* line 876, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.latest-pics h3 {
+  color: #ed645c;
+  margin-bottom: 1em;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 881, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event_gal h4 a {
+  font-size: 1em;
+  color: #333;
+  margin: 7px 0;
+  display: inline-block;
+}
+
+/* line 887, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.event_gal p {
+  line-height: 1.5em;
+  color: #999;
+  margin-bottom: 1em;
+}
+
+/* line 892, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.welcome-pic {
+  padding-right: 48px;
+  padding-left: 0;
+}
+
+/*-- //events --*/
+/*-- contact --*/
+/* line 898, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grids h2 {
+  color: #ed645c;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 2.1em;
+  margin-top: 1.5em;
+  font-family: 'Audiowide', cursive;
+}
+
+/* line 906, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grids p.design {
+  margin: .2em 0 0 0;
+  color: #999999;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* line 913, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.map {
+  border: 1px solid #000;
+  padding: 1em;
+  margin: 2em 0;
+}
+
+/* line 918, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.map iframe {
+  width: 100%;
+  height: 350px;
+}
+
+/* line 922, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grid {
+  float: left;
+  width: 29%;
+  text-align: center;
+}
+
+/* line 927, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grid p {
+  color: #898888;
+  font-size: 15px;
+  margin: 1em 0 0;
+}
+
+/* line 932, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grid p span {
+  display: block;
+  margin: .3em 0 0;
+}
+
+/* line 936, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-fig span {
+  background: url(/assets/work/images/call-fe699f4d058084184c871007685241c7ebf99c8795f950ba8e97811cc226096b.png) no-repeat 11em 0em;
+  display: block;
+  height: 21px;
+}
+
+/* line 941, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-fig1 span {
+  background: url(/assets/work/images/dot-a5c6ad35c6a8ed0775c865840917247bd445d70602aaef306167c11efcb27858.png) no-repeat 11em 0em;
+  display: block;
+  height: 21px;
+}
+
+/* line 946, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-fig2 span {
+  background: url(/assets/work/images/mes-c385e6022f93c9104612ce485289b6044c51408fa410b55f8563a3ba72043d22.png) no-repeat 11em 0em;
+  display: block;
+  height: 21px;
+}
+
+/* line 951, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grid p a {
+  color: #898888;
+  font-size: 15px;
+}
+
+/* line 955, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grid p a:hover {
+  text-decoration: none;
+  color: #7EC259;
+}
+
+/* line 959, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grid:nth-child(2) {
+  margin: 0 5em;
+}
+
+/* line 962, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grids input[type="text"], .contact-grids textarea {
+  outline: none;
+  border: 1px solid #a1a1a1;
+  background: none;
+  padding: 15px 10px;
+  font-size: 15px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+}
+
+/* line 974, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grids input[type="text"] {
+  width: 30%;
+  float: left;
+}
+
+/* line 978, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grids input[type="text"]:nth-child(2) {
+  margin: 0 3.8em;
+}
+
+/* line 981, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grids textarea {
+  width: 100%;
+  height: 300px;
+  margin: 1.5em 0;
+  resize: none;
+}
+
+/* line 987, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grids input[type="submit"] {
+  outline: none;
+  border: none;
+  background: #ed645c;
+  width: 15%;
+  display: block;
+  padding: 10px 0px;
+  border: 2px solid #ed645c;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  transition: .5s all;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -o-transition: .5s all;
+  -ms-transition: .5s all;
+  margin-bottom: 3em;
+}
+
+/* line 1010, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-grids input[type="submit"]:hover {
+  background: #fff;
+  color: #ed645c;
+}
+
+/* line 1014, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+.contact-icons {
+  padding: 2em 0 4em;
+}
+
+/*-- //contact --*/
+/*--Responsive--*/
+@media (max-width: 1024px) {
+  /* line 1020, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .bnr-text h3 {
+    font-size: 1.8em;
+  }
+
+  /* line 1023, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 {
+    width: 31.9%;
+  }
+
+  /* line 1026, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .popular ul li a {
+    font-size: 0.97em;
+  }
+
+  /* line 1029, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic {
+    padding-right: 21px;
+  }
+
+  /* line 1032, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic p {
+    line-height: 1.8em;
+    font-size: 0.98em;
+  }
+
+  /* line 1036, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h4, .skills h4 {
+    font-size: 1.1em;
+  }
+
+  /* line 1039, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .skills p {
+    font-size: 1em;
+  }
+
+  /* line 1042, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .skills ul li a {
+    font-size: 0.97em;
+  }
+
+  /* line 1045, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .testi p {
+    font-size: 1em;
+  }
+
+  /* line 1048, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .testi a {
+    font-size: 1em;
+  }
+
+  /* line 1051, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values p {
+    font-size: 1em;
+  }
+
+  /* line 1054, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date h3 {
+    font-size: 3.5em;
+  }
+
+  /* line 1057, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date {
+    margin-right: 5%;
+    width: 28%;
+    overflow: hidden;
+  }
+
+  /* line 1062, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid_pic h3 a {
+    font-size: 0.75em;
+  }
+
+  /* line 1065, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-info {
+    width: 67%;
+  }
+
+  /* line 1068, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-info h4 a {
+    font-size: 0.875em;
+  }
+
+  /* line 1071, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid {
+    padding-right: 0;
+  }
+
+  /* line 1074, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-info p {
+    font-size: 0.95em;
+  }
+
+  /* line 1077, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .gallery-text h2, .events-sec h2, .about h2, .contact-grids h2 {
+    font-size: 1.85em;
+  }
+
+  /* line 1080, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids p.design {
+    font-size: 18px;
+  }
+
+  /* line 1083, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grid {
+    width: 28%;
+  }
+
+  /* line 1086, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig span {
+    background: url(/assets/work/images/call-fe699f4d058084184c871007685241c7ebf99c8795f950ba8e97811cc226096b.png) no-repeat 9em 0em;
+  }
+
+  /* line 1089, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig1 span {
+    background: url(/assets/work/images/dot-a5c6ad35c6a8ed0775c865840917247bd445d70602aaef306167c11efcb27858.png) no-repeat 9em 0em;
+  }
+
+  /* line 1092, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig2 span {
+    background: url(/assets/work/images/mes-c385e6022f93c9104612ce485289b6044c51408fa410b55f8563a3ba72043d22.png) no-repeat 9em 0em;
+  }
+
+  /* line 1095, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids input[type="text"]:nth-child(2) {
+    margin: 0 3.1em;
+  }
+
+  /* line 1098, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info {
+    width: 68%;
+  }
+
+  /* line 1101, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info h3 {
+    font-size: 2em;
+  }
+
+  /* line 1104, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info p {
+    line-height: 1.6em;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  /* line 1109, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic h3, .coach h3, .popular h3 {
+    font-size: 1.6em;
+  }
+}
+@media (max-width: 768px) {
+  /* line 1114, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .container {
+    width: 736px;
+  }
+
+  /* line 1117, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .header {
+    padding: 1em 0;
+  }
+
+  /* line 1120, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info h3 {
+    font-size: 1.75em;
+  }
+
+  /* line 1123, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info {
+    width: 70%;
+    top: 17%;
+    padding: 1.5em;
+  }
+
+  /* line 1128, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .logo h1 a {
+    font-size: 0.8em;
+  }
+
+  /* line 1131, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul li a {
+    padding: 12px 0px 5px 14px;
+    font-size: 1em;
+  }
+
+  /* line 1135, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .search {
+    width: 45%;
+  }
+
+  /* line 1138, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .bnr-text h3 {
+    font-size: 1.5em;
+  }
+
+  /* line 1141, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info.clr2, .banner-text-info.clr1, .banner-text-info.clr3, .banner-text-info.clr4 {
+    float: left;
+  }
+
+  /* line 1144, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .bnr-text h3 {
+    font-size: 1.5em;
+  }
+
+  /* line 1147, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .bnr-text p {
+    font-size: 0.9em;
+  }
+
+  /* line 1150, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon1, .banner-text-info i.icon2, .banner-text-info i.icon3 {
+    width: 45px;
+    height: 44px;
+    margin: 31px 0 3px 12px;
+    background-size: 100%;
+  }
+
+  /* line 1156, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon4 {
+    width: 43px;
+    height: 44px;
+    margin: 31px 0 3px 12px;
+    background-size: 100%;
+  }
+
+  /* line 1162, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .bnr-text {
+    padding: 0px 0 15px 19px;
+  }
+
+  /* line 1165, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 {
+    width: 31.4%;
+    float: left;
+  }
+
+  /* line 1169, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 p {
+    line-height: 1.6em;
+    font-size: 0.95em;
+  }
+
+  /* line 1173, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 h3 {
+    font-size: 1.35em;
+  }
+
+  /* line 1176, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 a {
+    margin-top: 0.5em;
+    font-size: 1em;
+  }
+
+  /* line 1180, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic h3, .coach h3, .popular h3 {
+    font-size: 1.5em;
+  }
+
+  /* line 1183, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .popular, .welcome-pic {
+    float: left;
+    width: 50%;
+  }
+
+  /* line 1187, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic {
+    padding-right: 0px;
+  }
+
+  /* line 1190, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach {
+    width: 100%;
+    float: left;
+  }
+
+  /* line 1194, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach-pic-info {
+    width: 80%;
+  }
+
+  /* line 1197, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach-pic {
+    width: 8%;
+  }
+
+  /* line 1200, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach {
+    padding: 23px 20px;
+  }
+
+  /* line 1203, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .chr {
+    margin: 1.5em 0 1em 0;
+    padding-bottom: 1em;
+  }
+
+  /* line 1207, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .footer-menu ul li a {
+    padding: 5px 3px 4px;
+    font-size: 0.85em;
+  }
+
+  /* line 1211, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .copywrite {
+    padding-top: 0px;
+  }
+
+  /* line 1214, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  p.abt-info, .about-head p {
+    font-size: 0.95em;
+  }
+
+  /* line 1217, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .about-grid a {
+    font-size: 1.1em;
+  }
+
+  /* line 1220, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic p {
+    font-size: 0.9em;
+  }
+
+  /* line 1223, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h3, .skills h3, .testi h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.7em;
+  }
+
+  /* line 1227, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .testi p {
+    padding: 0 0px 5px 25px;
+    background-size: 17px;
+  }
+
+  /* line 1231, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .testi a {
+    padding: 0 0px 10px 24px;
+  }
+
+  /* line 1234, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values span {
+    font-size: 2.2em;
+  }
+
+  /* line 1237, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .abt_text {
+    margin: 2em 0;
+  }
+
+  /* line 1240, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .skills {
+    margin-bottom: 1em;
+  }
+
+  /* line 1243, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .skills, .testi {
+    padding: 0;
+  }
+
+  /* line 1246, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .skills ul li {
+    margin: 0 0px 0px 15px;
+  }
+
+  /* line 1249, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .value-grd {
+    margin-bottom: 1em;
+  }
+
+  /* line 1252, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .popular ul li {
+    margin: 0 0px 8px 0px;
+  }
+
+  /* line 1255, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values {
+    margin-bottom: 2em;
+  }
+
+  /* line 1258, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main h3 {
+    font-size: 125px;
+  }
+
+  /* line 1261, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main p {
+    font-size: 17px;
+  }
+
+  /* line 1264, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grids {
+    margin: 2em 0;
+  }
+
+  /* line 1267, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid {
+    padding: 0;
+  }
+
+  /* line 1270, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date {
+    margin-right: 4%;
+    width: 12%;
+  }
+
+  /* line 1274, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date h3 {
+    font-size: 2.5em;
+  }
+
+  /* line 1277, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date span {
+    font-size: 1.1em;
+  }
+
+  /* line 1280, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-info {
+    padding: 0;
+    width: 84%;
+  }
+
+  /* line 1284, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid:nth-child(2) {
+    margin: 2em 0;
+  }
+
+  /* line 1287, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .ftrd-head {
+    margin-top: 2em;
+  }
+
+  /* line 1290, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid-sec {
+    width: 31.9%;
+    float: left;
+    padding: 0;
+  }
+
+  /* line 1295, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid-sec:nth-child(2) {
+    margin: 0 15px;
+  }
+
+  /* line 1298, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-time {
+    padding: 0.3em;
+    width: 52%;
+    font-size: 12px;
+  }
+
+  /* line 1303, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid_pic p {
+    font-size: 0.95em;
+  }
+
+  /* line 1306, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event_gal h4 a {
+    font-size: 0.95em;
+  }
+
+  /* line 1309, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event_gal p {
+    font-size: 0.95em;
+  }
+
+  /* line 1312, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .map iframe {
+    height: 250px;
+  }
+
+  /* line 1315, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .map {
+    margin: 1.5em 0 1em 0;
+  }
+
+  /* line 1318, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grid {
+    width: 25%;
+  }
+
+  /* line 1321, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig span {
+    background: url(/assets/work/images/call-fe699f4d058084184c871007685241c7ebf99c8795f950ba8e97811cc226096b.png) no-repeat 6em 0em;
+  }
+
+  /* line 1324, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig1 span {
+    background: url(/assets/work/images/dot-a5c6ad35c6a8ed0775c865840917247bd445d70602aaef306167c11efcb27858.png) no-repeat 6em 0em;
+  }
+
+  /* line 1327, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig2 span {
+    background: url(/assets/work/images/mes-c385e6022f93c9104612ce485289b6044c51408fa410b55f8563a3ba72043d22.png) no-repeat 6em 0em;
+  }
+
+  /* line 1330, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids input[type="text"] {
+    width: 100%;
+    padding: 11px 10px;
+    margin: 1.5em 0;
+  }
+
+  /* line 1335, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids input[type="text"]:nth-child(2) {
+    margin: 0;
+  }
+
+  /* line 1338, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids textarea {
+    height: 196px;
+    margin: 0 0;
+  }
+
+  /* line 1342, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-icons {
+    padding: 2em 0;
+  }
+
+  /* line 1345, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids input[type="submit"] {
+    width: 21%;
+    padding: 7px 0px;
+    font-size: 17px;
+    margin: 1em 0;
+  }
+}
+@media (max-width: 736px) {
+  /* line 1353, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .container {
+    width: 705px;
+  }
+
+  /* line 1356, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul li a {
+    font-size: 0.95em;
+  }
+
+  /* line 1359, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info p {
+    line-height: 1.5em;
+    font-size: 0.9em;
+  }
+
+  /* line 1363, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .logo h1 a {
+    font-size: 0.75em;
+  }
+
+  /* line 1366, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .strip {
+    padding: 1em 1em;
+  }
+
+  /* line 1369, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 {
+    width: 31.3%;
+  }
+
+  /* line 1372, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .copywrite p {
+    font-size: 13px;
+  }
+
+  /* line 1375, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h3, .skills h3, .testi h3 {
+    font-size: 1.7em;
+  }
+
+  /* line 1378, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-overlay:target {
+    padding: 27px 126px 92px 151px;
+  }
+
+  /* line 1381, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-overlay a.lb-close {
+    right: 13%;
+  }
+
+  /* line 1384, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error {
+    padding: 2em 0 8em;
+    min-height: 528px;
+  }
+
+  /* line 1388, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main h5 {
+    font-size: 22px;
+  }
+
+  /* line 1391, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main h3 span {
+    font-size: 41px;
+  }
+
+  /* line 1394, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid-sec {
+    width: 31.85%;
+  }
+}
+@media (max-width: 667px) {
+  /* line 1399, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .container {
+    width: 636px;
+  }
+
+  /* line 1402, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .header {
+    padding: 1em 0;
+  }
+
+  /* line 1405, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .strip {
+    padding: 1em 1em;
+    margin-top: 0em;
+  }
+
+  /* line 1409, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .logo h1 a {
+    font-size: 26px;
+  }
+
+  /* line 1412, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  span.menu:before {
+    content: url(../images/nav.png);
+    cursor: pointer;
+    height: 32px;
+  }
+
+  /* line 1417, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu {
+    width: 5%;
+    float: right;
+    margin-top: 12px;
+  }
+
+  /* line 1422, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul {
+    display: none;
+  }
+
+  /* line 1425, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul li {
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* line 1430, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul li a {
+    padding: 8px 0;
+    font-size: 14px;
+    width: 100%;
+    color: #fff;
+  }
+
+  /* line 1436, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  span.menu {
+    display: block;
+    float: right;
+  }
+
+  /* line 1440, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul {
+    margin: 0;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    top: 22%;
+    background: #ed645c;
+  }
+
+  /* line 1450, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul li a:hover, .top-menu ul li.active a {
+    color: #333;
+  }
+
+  /* line 1453, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info h3 {
+    font-size: 1.6em;
+  }
+
+  /* line 1456, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info p {
+    padding: 0.5em 0 1em 0;
+  }
+
+  /* line 1459, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .bnr-text h3 {
+    font-size: 1.2em;
+  }
+
+  /* line 1462, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .bnr-text p {
+    font-size: 0.85em;
+    line-height: 1.3em;
+  }
+
+  /* line 1466, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon1, .banner-text-info i.icon3 {
+    width: 41px;
+    height: 43px;
+    margin: 31px 0 3px 11px;
+  }
+
+  /* line 1471, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon2 {
+    width: 38px;
+    height: 37px;
+    margin: 36px 0 3px 18px;
+  }
+
+  /* line 1476, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon4 {
+    width: 40px;
+    height: 40px;
+    margin: 35px 0 3px 16px;
+  }
+
+  /* line 1481, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 {
+    width: 31.1%;
+  }
+
+  /* line 1484, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 h3 {
+    font-size: 1.15em;
+  }
+
+  /* line 1487, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic h3, .coach h3, .popular h3 {
+    font-size: 1.3em;
+  }
+
+  /* line 1490, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .popular ul li a {
+    font-size: 0.9em;
+  }
+
+  /* line 1493, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .popular ul li {
+    margin: 0 0px 4px 0px;
+  }
+
+  /* line 1496, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic p {
+    margin-bottom: 15px;
+  }
+
+  /* line 1499, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .about-grid {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  /* line 1503, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .about-pic {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+
+  /* line 1507, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .testi p {
+    padding: 0 0px 5px 24px;
+    background-size: 15px;
+  }
+
+  /* line 1511, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .testi a {
+    font-size: 0.9em;
+    padding: 0 0px 10px 24px;
+  }
+
+  /* line 1515, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .footer {
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  /* line 1519, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .copywrite {
+    margin-bottom: 12px;
+  }
+
+  /* line 1522, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .copywrite, .footer-menu {
+    float: none;
+  }
+
+  /* line 1525, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .gallery-text p {
+    font-size: 0.9em;
+    line-height: 1.8em;
+  }
+
+  /* line 1529, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main h3 {
+    font-size: 110px;
+  }
+
+  /* line 1532, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main h3 span {
+    font-size: 35px;
+  }
+
+  /* line 1535, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main p {
+    font-size: 14px;
+  }
+
+  /* line 1538, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main a {
+    font-size: 14px;
+  }
+
+  /* line 1541, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error {
+    padding: 2em 0 5em;
+    min-height: 250px;
+  }
+
+  /* line 1545, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .gallery-text h2, .events-sec h2, .about h2, .contact-grids h2 {
+    font-size: 1.6em;
+  }
+
+  /* line 1548, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid-sec {
+    width: 31.65%;
+  }
+
+  /* line 1551, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid_pic h3 a {
+    font-size: 0.6em;
+  }
+
+  /* line 1554, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .latest-pics h3 {
+    font-size: 1.35em;
+  }
+
+  /* line 1557, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event_gal p {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 600px) {
+  /* line 1562, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .container {
+    width: 569px;
+  }
+
+  /* line 1565, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .search {
+    width: 45%;
+  }
+
+  /* line 1568, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .search input[type="text"] {
+    width: 87.33333%;
+  }
+
+  /* line 1571, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 {
+    width: 30.85%;
+  }
+
+  /* line 1574, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 h3 {
+    font-size: 1.15em;
+  }
+
+  /* line 1577, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic h4 {
+    font-size: 1em;
+  }
+
+  /* line 1580, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h4, .skills h4 {
+    font-size: 1em;
+  }
+
+  /* line 1583, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul {
+    top: 19%;
+  }
+
+  /* line 1586, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-album li {
+    width: 30%;
+    margin: 0 5% 0% 0%;
+  }
+
+  /* line 1590, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-album li {
+    width: 29.3%;
+    margin: 0px 2% 0% 2%;
+  }
+
+  /* line 1594, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-album li:first-child {
+    margin-left: 2%;
+  }
+
+  /* line 1597, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .main {
+    margin-top: 1em;
+  }
+
+  /* line 1600, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids p.design {
+    font-size: 14px;
+  }
+
+  /* line 1603, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grid {
+    width: 22%;
+  }
+
+  /* line 1606, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grid p {
+    font-size: 12px;
+  }
+
+  /* line 1609, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig span {
+    background: url(/assets/work/images/call-fe699f4d058084184c871007685241c7ebf99c8795f950ba8e97811cc226096b.png) no-repeat 3.5em 0em;
+  }
+
+  /* line 1612, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig1 span {
+    background: url(/assets/work/images/dot-a5c6ad35c6a8ed0775c865840917247bd445d70602aaef306167c11efcb27858.png) no-repeat 3.5em 0em;
+  }
+
+  /* line 1615, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig2 span {
+    background: url(/assets/work/images/mes-c385e6022f93c9104612ce485289b6044c51408fa410b55f8563a3ba72043d22.png) no-repeat 3.5em 0em;
+  }
+
+  /* line 1618, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids input[type="text"] {
+    padding: 8px 10px;
+    margin: 1em 0;
+  }
+
+  /* line 1622, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids input[type="submit"] {
+    padding: 6px 0px;
+    font-size: 15px;
+  }
+
+  /* line 1626, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .ftrd-head h3 {
+    font-size: 1.5em;
+  }
+
+  /* line 1629, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid-sec:nth-child(2) {
+    margin: 0 13px;
+  }
+}
+@media (max-width: 568px) {
+  /* line 1634, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .container {
+    width: 537px;
+  }
+
+  /* line 1637, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info h3 {
+    font-size: 1.3em;
+  }
+
+  /* line 1640, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info {
+    width: 83%;
+    top: 15%;
+    padding: 1.3em;
+  }
+
+  /* line 1645, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info p {
+    padding: 0.7em 0 0em 0;
+  }
+
+  /* line 1648, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info.clr1, .banner-text-info.clr2, .banner-text-info.clr3, .banner-text-info.clr4 {
+    margin: 0 0% 3% 0;
+    width: 100%;
+  }
+
+  /* line 1652, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .about-grid h3 {
+    font-size: 1.3em;
+  }
+
+  /* line 1655, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h3, .skills h3, .testi h3 {
+    font-size: 1.5em;
+  }
+
+  /* line 1658, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-bottom-grids {
+    margin: 2em 0 1em 0;
+  }
+
+  /* line 1661, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1 {
+    width: 100%;
+  }
+
+  /* line 1664, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-grid1:nth-child(2) {
+    padding: 0;
+    margin: 18px 0px;
+  }
+
+  /* line 1668, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .popular, .welcome-pic {
+    width: 100%;
+  }
+
+  /* line 1671, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-info {
+    margin: 2em 0;
+  }
+
+  /* line 1674, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic {
+    margin: 1em 0;
+  }
+
+  /* line 1677, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic p {
+    margin-bottom: 0px;
+  }
+
+  /* line 1680, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul {
+    top: 27%;
+  }
+
+  /* line 1683, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values p {
+    margin-top: 0em;
+    font-size: 0.9em;
+  }
+
+  /* line 1687, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid-sec {
+    width: 100%;
+  }
+
+  /* line 1690, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-time {
+    padding: 0.5em;
+  }
+
+  /* line 1693, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid-sec:nth-child(2) {
+    margin: 18px 0px;
+  }
+
+  /* line 1696, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-album li:first-child {
+    margin-left: 0%;
+  }
+
+  /* line 1699, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-album li {
+    width: 31.3%;
+    margin: 0px 2% 0% 0%;
+  }
+
+  /* line 1703, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grid {
+    width: 33%;
+  }
+
+  /* line 1706, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig span {
+    background: url(/assets/work/images/call-fe699f4d058084184c871007685241c7ebf99c8795f950ba8e97811cc226096b.png) no-repeat 5.5em 0em;
+  }
+
+  /* line 1709, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig1 span {
+    background: url(/assets/work/images/dot-a5c6ad35c6a8ed0775c865840917247bd445d70602aaef306167c11efcb27858.png) no-repeat 5.5em 0em;
+  }
+
+  /* line 1712, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig2 span {
+    background: url(/assets/work/images/mes-c385e6022f93c9104612ce485289b6044c51408fa410b55f8563a3ba72043d22.png) no-repeat 5.5em 0em;
+  }
+}
+@media (max-width: 414px) {
+  /* line 1717, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .container {
+    width: 382px;
+  }
+
+  /* line 1720, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .social i {
+    width: 25px;
+    margin: 0 2px;
+  }
+
+  /* line 1724, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info {
+    width: 86%;
+    top: 7%;
+    padding: 1em;
+  }
+
+  /* line 1729, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info h3 {
+    font-size: 1.1em;
+  }
+
+  /* line 1732, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info p {
+    padding: 0.7em 0 0em 0;
+    font-size: 0.8em;
+  }
+
+  /* line 1736, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon4 {
+    width: 37px;
+    height: 38px;
+    margin: 20px 0 3px 16px;
+  }
+
+  /* line 1741, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon1, .banner-text-info i.icon3 {
+    width: 41px;
+    height: 43px;
+    margin: 20px 0 3px 11px;
+  }
+
+  /* line 1746, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon2 {
+    width: 35px;
+    height: 33px;
+    margin: 21px 0 3px 18px;
+  }
+
+  /* line 1751, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .popular {
+    padding: 0;
+  }
+
+  /* line 1754, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .popular ul li {
+    margin: 0px 0px 4px 15px;
+    padding: 3px 0;
+  }
+
+  /* line 1758, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic h3, .coach h3, .popular h3 {
+    font-size: 1.3em;
+    margin: 0 0 6px 0;
+  }
+
+  /* line 1762, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .content-info {
+    margin: 1.5em 0;
+  }
+
+  /* line 1765, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic h4 {
+    font-size: 0.9em;
+  }
+
+  /* line 1768, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach-pic-info h4 a {
+    font-size: 0.8em;
+  }
+
+  /* line 1771, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach-pic {
+    width: 12%;
+    margin-right: 3%;
+  }
+
+  /* line 1775, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach {
+    padding: 15px 14px;
+  }
+
+  /* line 1778, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach-pic-info {
+    width: 84%;
+  }
+
+  /* line 1781, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .footer-menu ul li a {
+    padding: 5px 3px 4px;
+    font-size: 0.75em;
+  }
+
+  /* line 1785, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul {
+    top: 10%;
+  }
+
+  /* line 1788, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .about-grid p {
+    font-size: 0.9em;
+  }
+
+  /* line 1791, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h3, .skills h3, .testi h3 {
+    margin-bottom: 0.3em;
+  }
+
+  /* line 1794, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h3, .skills h3, .testi h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.3em;
+  }
+
+  /* line 1798, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h4, .skills h4 {
+    font-size: 0.95em;
+  }
+
+  /* line 1801, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .skills p {
+    font-size: 0.9em;
+  }
+
+  /* line 1804, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .skills ul {
+    margin-top: 0.5em;
+  }
+
+  /* line 1807, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-album li {
+    width: 47%;
+    margin: 0px 3% 0% 0%;
+  }
+
+  /* line 1811, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date span {
+    font-size: 0.85em;
+  }
+
+  /* line 1814, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date {
+    margin-right: 3%;
+    width: 16%;
+  }
+
+  /* line 1818, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-info {
+    width: 80%;
+  }
+
+  /* line 1821, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-info h4 a {
+    font-size: 0.8em;
+  }
+
+  /* line 1824, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .ftrd-head p {
+    font-size: 0.8em;
+  }
+
+  /* line 1827, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-overlay:target {
+    padding: 159px 25px 1px 25px;
+  }
+
+  /* line 1830, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-overlay a.lb-close {
+    top: 17%;
+  }
+
+  /* line 1833, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids p.design {
+    font-size: 14px;
+  }
+
+  /* line 1836, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grid {
+    width: 100%;
+  }
+
+  /* line 1839, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grid:nth-child(2) {
+    margin: 1em 0em;
+  }
+
+  /* line 1842, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-icons {
+    padding: 1em 0;
+  }
+
+  /* line 1845, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig span {
+    background: url(/assets/work/images/call-fe699f4d058084184c871007685241c7ebf99c8795f950ba8e97811cc226096b.png) no-repeat 11.5em 0em;
+  }
+
+  /* line 1848, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig1 span {
+    background: url(/assets/work/images/dot-a5c6ad35c6a8ed0775c865840917247bd445d70602aaef306167c11efcb27858.png) no-repeat 11.5em 0em;
+  }
+
+  /* line 1851, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig2 span {
+    background: url(/assets/work/images/mes-c385e6022f93c9104612ce485289b6044c51408fa410b55f8563a3ba72043d22.png) no-repeat 11.5em 0em;
+  }
+}
+@media (max-width: 384px) {
+  /* line 1856, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .container {
+    width: 353px;
+  }
+
+  /* line 1859, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .search {
+    width: 100%;
+    margin: 0 3px 0 -6px;
+    float: none;
+  }
+
+  /* line 1864, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .social {
+    float: none;
+    margin-top: 0.5em;
+  }
+
+  /* line 1868, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .strip {
+    text-align: center;
+  }
+
+  /* line 1871, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .search input[type="text"] {
+    width: 100%;
+    padding: 6px 35px 6px 10px;
+  }
+
+  /* line 1875, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .strip {
+    padding: 1em 1em 5px 1em;
+    margin-top: 0em;
+  }
+
+  /* line 1879, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .rslides img {
+    height: 168px;
+  }
+
+  /* line 1882, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info {
+    width: 92%;
+    top: 11%;
+  }
+
+  /* line 1886, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-bottom-grids {
+    margin: 1em 0 1em 0;
+  }
+
+  /* line 1889, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .footer-menu ul li a {
+    padding: 5px 8px 0px;
+    font-size: 0.75em;
+  }
+
+  /* line 1893, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach-pic-info h5 {
+    font-size: 0.8em;
+  }
+
+  /* line 1896, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .coach-pic-info p {
+    font-size: 0.9em;
+  }
+
+  /* line 1899, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .ftrd-head h3 {
+    font-size: 1.3em;
+  }
+
+  /* line 1902, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .ftrd-head {
+    margin-top: 0em;
+  }
+
+  /* line 1905, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grid:nth-child(2) {
+    margin: 1em 0;
+  }
+
+  /* line 1908, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-grids {
+    margin: 1em 0 2em 0;
+  }
+
+  /* line 1911, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids textarea {
+    height: 144px;
+  }
+
+  /* line 1914, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids input[type="text"], .contact-grids textarea {
+    font-size: 13px;
+  }
+
+  /* line 1917, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids input[type="submit"] {
+    width: 32%;
+    font-size: 13px;
+  }
+}
+@media (max-width: 375px) {
+  /* line 1923, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .container {
+    width: 344px;
+  }
+
+  /* line 1926, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu {
+    margin-top: 10px;
+  }
+
+  /* line 1929, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info p {
+    overflow: hidden;
+    height: 87px;
+  }
+
+  /* line 1933, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info {
+    top: 9%;
+  }
+}
+@media (max-width: 320px) {
+  /* line 1938, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .breadcrumb {
+    padding: 5px 15px;
+  }
+
+  /* line 1941, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .breadcrumb > li {
+    font-size: 12px;
+  }
+
+  /* line 1944, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info h3 {
+    font-size: 0.98em;
+  }
+
+  /* line 1947, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-info {
+    top: 12%;
+  }
+
+  /* line 1950, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .container {
+    width: 288px;
+    padding: 0 10px;
+  }
+
+  /* line 1954, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .rslides img {
+    height: 170px;
+  }
+
+  /* line 1957, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon1, .banner-text-info i.icon3 {
+    width: 32px;
+    height: 32px;
+    margin: 20px 0 1px 11px;
+  }
+
+  /* line 1962, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .bnr-text h3 {
+    font-size: 1.15em;
+  }
+
+  /* line 1965, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon2 {
+    width: 28px;
+    height: 27px;
+    margin: 21px 0 3px 18px;
+  }
+
+  /* line 1970, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .banner-text-info i.icon4 {
+    width: 32px;
+    height: 31px;
+    margin: 28px 0 3px 16px;
+  }
+
+  /* line 1975, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .welcome-pic h3, .coach h3, .popular h3 {
+    font-size: 1.15em;
+    margin: 0 0 8px 0;
+  }
+
+  /* line 1979, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .popular ul li:nth-child(4), .popular ul li:nth-child(7) {
+    display: none;
+  }
+
+  /* line 1982, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul {
+    top: 15%;
+  }
+
+  /* line 1985, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .top-menu ul li a {
+    padding: 6px 0;
+  }
+
+  /* line 1988, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .about h2 {
+    margin-top: 1em;
+  }
+
+  /* line 1991, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  ol.breadcrumb {
+    margin-top: 2em;
+  }
+
+  /* line 1994, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .gallery-text h2, .events-sec h2, .about h2, .contact-grids h2 {
+    font-size: 1.3em;
+  }
+
+  /* line 1997, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .about-head {
+    margin-top: 0.5em;
+  }
+
+  /* line 2000, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .about-grids {
+    margin-top: 1em;
+  }
+
+  /* line 2003, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .about-grid p {
+    margin-top: 0.5em;
+  }
+
+  /* line 2006, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h3, .skills h3, .testi h3 {
+    font-size: 1.3em;
+  }
+
+  /* line 2009, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values span {
+    font-size: 1.8em;
+  }
+
+  /* line 2012, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values h4, .skills h4 {
+    margin-top: 0;
+    font-size: 0.8em;
+  }
+
+  /* line 2016, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .values p {
+    margin-top: 5px;
+    font-size: 0.85em;
+    line-height: 1.5em;
+  }
+
+  /* line 2021, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .skills ul li a {
+    font-size: 0.83em;
+  }
+
+  /* line 2024, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .testi p {
+    font-size: 0.84em;
+  }
+
+  /* line 2027, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .testi h3 {
+    margin-bottom: 0.5em;
+  }
+
+  /* line 2030, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .lb-overlay a.lb-close {
+    top: 22%;
+  }
+
+  /* line 2033, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main h3 {
+    font-size: 60px;
+  }
+
+  /* line 2036, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main h3 span {
+    margin: 2em 0 0;
+    font-size: 28px;
+  }
+
+  /* line 2040, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main h5 {
+    font-size: 17px;
+  }
+
+  /* line 2043, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .error-main p {
+    font-size: 13px;
+  }
+
+  /* line 2046, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date h3 {
+    font-size: 2em;
+  }
+
+  /* line 2049, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date span {
+    font-size: 0.8em;
+  }
+
+  /* line 2052, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .date {
+    width: 18%;
+  }
+
+  /* line 2055, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-info {
+    width: 79%;
+  }
+
+  /* line 2058, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event-info h4 a {
+    font-size: 0.75em;
+  }
+
+  /* line 2061, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event_gal h4 a {
+    font-size: 0.8em;
+  }
+
+  /* line 2064, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .event_gal p {
+    font-size: 0.8em;
+  }
+
+  /* line 2067, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig span {
+    background: url(/assets/work/images/call-fe699f4d058084184c871007685241c7ebf99c8795f950ba8e97811cc226096b.png) no-repeat 9em 0em;
+  }
+
+  /* line 2070, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig1 span {
+    background: url(/assets/work/images/dot-a5c6ad35c6a8ed0775c865840917247bd445d70602aaef306167c11efcb27858.png) no-repeat 9em 0em;
+  }
+
+  /* line 2073, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-fig2 span {
+    background: url(/assets/work/images/mes-c385e6022f93c9104612ce485289b6044c51408fa410b55f8563a3ba72043d22.png) no-repeat 9em 0em;
+  }
+
+  /* line 2076, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grid p {
+    margin: 3px 0 0;
+  }
+
+  /* line 2079, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grid:nth-child(2) {
+    margin: 1.5em 0em;
+  }
+
+  /* line 2082, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .contact-grids textarea {
+    height: 115px;
+  }
+
+  /* line 2085, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .main {
+    margin: 2em 0;
+  }
+
+  /* line 2088, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .ftrd-head h3 {
+    font-size: 1.2em;
+  }
+
+  /* line 2091, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .map {
+    padding: 0.5em;
+  }
+
+  /* line 2094, C:/Users/Onyekachi/workspace/work/vendor/assets/work/work/css/style.css.scss */
+  .map iframe {
+    height: 193px;
+  }
+}

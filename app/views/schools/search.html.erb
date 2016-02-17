@@ -1,0 +1,10 @@
+<h1><%= pluralize(@schools.count,  "results") %> for <%= params[:query] %></h1>
+
+<% if @schools.empty? %>
+
+ 	<p>Hey there, didn't find the school you're looking for. <br/> Not to worry, simply <%= link_to "add it here", new_school_path, 'data-no-turbolink' => true %></p>
+<% else %>
+
+	<%= render 'schools/index' %>
+
+<% end %>

@@ -1,0 +1,14 @@
+<div class="row row-centered">
+ 
+    <div class="picture-center">
+      <%= image_tag(@school.picture_url, :size => "400x400", class: "img-responsive") %>
+    </div>
+
+       <%= render 'schools/description' %>s
+  </div>
+    <div class = "container">
+      <div class="starter-template">
+          <p class="lead">Address:  <%= @school.address %>, <%= @school.location %></p>
+          <p class = "lead"> Category: <%=@school.category %> </p>
+      </div>
+    </div>
