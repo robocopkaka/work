@@ -13,12 +13,19 @@
          <h3><%= school.name %></h3>
          <p><%= school.description %></p>
          <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %>
-         <% if !school.approved? %>
-            <p> <%= link_to "Approve", controller: "school_admins", action: "approve", id: school.id %> </p>
-            <% else %> <!-- end for approve button if block -->
             <p> <%= link_to "Remove", controller: "school_admins", action: "approve", id: school.id %> </p>
-          <% end %>
        </div>
+        <% else %>
+          <div class="col-md-4 content-grid1">
+          <% if !school.picture_url.nil? %>
+            <%= link_to image_tag(school.picture_url), controller: 'schools', action: 'show', id: school.id%>
+          <% else %>
+            <%= link_to image_tag("school_children.jpg"), controller: 'schools', action: 'show', id: school.id%>
+          <% end %>
+          <h3><%= school.name %></h3>
+          <p><%= school.description %></p>
+          <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %>
+          <p> <%= link_to "Approve", controller: "school_admins", action: "approve", id: school.id %> </p>
         <% end %>
        <% end %>
        <div class="clearfix"></div>
