@@ -1,0 +1,14 @@
+<div class="container">
+		 <ol class="breadcrumb">
+		  <li><%= link_to "HOME", root_path %></li>
+		  <li class="active"><%= link_to "All Schools", all_schools_path %></li>
+		 </ol>
+</div>
+
+<% if @schools.empty? %>
+	<div class="about-head">
+			 <p>Seems schools haven't been added yet. Go <%= link_to "Add New School", new_school_path %> to add a new school</p>
+		 </div>
+<% else %>
+	<%= render 'school_admins/school' %>
+<% end %>

@@ -10,14 +10,14 @@ class School < ActiveRecord::Base
 	mount_uploader :picture, PictureUploader
 	#validates :category, presence:true
 
-	scope :contains_name_or_location, -> (name) {where('school_name LIKE ? OR location LIKE ?', "%#{name}%", "#{name}")}
-	scope :contains_name, -> (name) {where('name LIKE ?', "%#{name}%")}
-	scope :contains_state, -> (state) {where('location LIKE ?', "%#{state}%")}
-	scope :contains_category, -> (category) {where('category LIKE ?', "#{category}")}
-	scope :contains_name_and_state, -> (name, state) {where('school_name LIKE ? AND location LIKE ?', "%#{name}%", "%#{state}%")}
-	scope :contains_name_and_category, -> (name, category) {where('school_name LIKE ? AND category LIKE ?', "%#{name}%", "#{category}")}
-	scope :contains_state_and_category, -> (state, category) {where('location LIKE ? AND category like ?', "%#{state}%", "#{category}")}
-	scope :contains_name_and_category_and_state, -> (name, category, state) {where('school_name LIKE ? AND location like ? AND category LIKE ?', "%#{name}%", "#{category}", "%#{state}$")}
+	#scope :contains_name_or_location, -> (name) {where('school_name LIKE ? OR location LIKE ?', "%#{name}%", "#{name}")}
+	scope :contains_name, -> (name) {where('name ILIKE ?', "%#{name}%")}
+	#scope :contains_state, -> (state) {where('location LIKE ?', "%#{state}%")}
+	#scope :contains_category, -> (category) {where('category LIKE ?', "#{category}")}
+	#scope :contains_name_and_state, -> (name, state) {where('school_name LIKE ? AND location LIKE ?', "%#{name}%", "%#{state}%")}
+	#scope :contains_name_and_category, -> (name, category) {where('school_name LIKE ? AND category LIKE ?', "%#{name}%", "#{category}")}
+	#scope :contains_state_and_category, -> (state, category) {where('location LIKE ? AND category like ?', "%#{state}%", "#{category}")}
+	#scope :contains_name_and_category_and_state, -> (name, category, state) {where('school_name LIKE ? AND location like ? AND category LIKE ?', "%#{name}%", "#{category}", "%#{state}$")}
 	scope :approved_status, -> (status) {where(approved: status)}
 	scope :approved_true, -> {where(approved: true)}
 

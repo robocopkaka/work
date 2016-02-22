@@ -1,0 +1,14 @@
+<div class="container">
+		 <ol class="breadcrumb">
+		  <li><%= link_to "HOME", root_path %></li>
+		  <li class="active"><%= link_to "Unapproved Schools", unapproved_schools_path %></li>
+		 </ol>
+</div>
+
+<% if @schools.empty? %>
+	<div class="about-head">
+			 <p>Seems either all schools have been approved or users haven't added schools yet. Check <%= link_to ("here"), approved_schools_path %> to view approved schools, or <%= link_to ("here"), all_schools_path %> to view all schools</p>
+		 </div>
+<% else %>
+	<%= render 'school_admins/school' %>
+<% end %>

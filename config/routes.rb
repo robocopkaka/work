@@ -43,6 +43,10 @@ Rails.application.routes.draw do
   get 'universities' => 'schools#universities'
 
   get 'creches' => 'schools#creches'
+
+  get 'approved_schools' => 'school_admins#approved_schools'
+  get 'unapproved_schools' => 'school_admins#unapproved_schools'
+   get 'all_schools' => 'school_admins#all_schools'
   root'schools#index'
 
 
