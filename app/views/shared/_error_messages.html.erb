@@ -1,0 +1,16 @@
+<!-- this partial is used to render error messages in views that require data entry
+it depends on validations set in the model, and will render errors based on whatever was given in the validations -->
+<% if object.errors.any? %>
+	<div id = "error_explanation">
+      <div class = "alert alert-danger">
+      	The form contains <%= pluralize(object.errors.count, "errors") %> <!-- using object.errors allow us to use it across multiple views with minimal changes -->
+      </div>
+
+      <ul>
+      	<% object.errors.full_messages.each do |msg| %>
+      	<li> <%= msg %> </li>
+      	<% end %>
+      </ul>
+	</div>
+
+	<% end %>

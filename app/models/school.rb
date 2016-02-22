@@ -11,7 +11,7 @@ class School < ActiveRecord::Base
 	#validates :category, presence:true
 
 	scope :contains_name_or_location, -> (name) {where('school_name LIKE ? OR location LIKE ?', "%#{name}%", "#{name}")}
-	scope :contains_name, -> (name) {where('school_name LIKE ?', "%#{name}%")}
+	scope :contains_name, -> (name) {where('name LIKE ?', "%#{name}%")}
 	scope :contains_state, -> (state) {where('location LIKE ?', "%#{state}%")}
 	scope :contains_category, -> (category) {where('category LIKE ?', "#{category}")}
 	scope :contains_name_and_state, -> (name, state) {where('school_name LIKE ? AND location LIKE ?', "%#{name}%", "%#{state}%")}

@@ -1,12 +1,18 @@
 require 'will_paginate/array'
 class SchoolsController < ApplicationController
-  # autocomplete :school, :school_name, :scopes => [:approved_true]
+  #autocomplete :school, :school_name, :scopes => [:approved_true]
   # autocomplete :school, :location
   # before_action :admin_user, only: [:destroy]
   
   #calls the new view to render a page with forms
   def new
   	@school = School.new
+  end
+
+  def about
+  end
+
+  def contact
   end
 
   #commits the new school to memory
@@ -51,8 +57,17 @@ class SchoolsController < ApplicationController
   #do a method to check if state and category are present, and a combo of two or three in case the user decides to search with any
   def index
   	if params[:query].present?
-  		@schools = School.contains_name(params[:query]).approved(true)
+  		render 'search'
   	end
+    count = School.count
+  random_offset = rand(count)
+    @school1 = School.offset(random_offset).first
+    @school2 = School.offset(random_offset).second
+    @school3 = School.offset(random_offset).third
+  end
+
+  def search
+    @schools = School.contains_name(params[:query]).approved_true.paginate(page: params[:page], per_page: 10)
   end
 
   def states

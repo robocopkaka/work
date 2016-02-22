@@ -1,27 +1,23 @@
 
-
-   <div class="container marketing">
-     <div class="row row-centered">
-     <% @schools.each do |school| %>
-      <% if school.approved? %>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <% if !school.picture_url.nil? %>
-          <%= link_to image_tag(school.picture_url, :size => "140x140", class: "img-circle"), school_path(school) %>
-        <% else %>
-          <%= link_to image_tag("CTqsxJoW4AAIeZD.jpg", :size => "140x140", class: "img-circle"), school_path(school) %>
-        <% end %>
-           <h2><%= link_to school.school_name, school_path(school) %></h2>
-            <p><%= school.category%></p>
-            <% if !school.website.nil? %>
-              <%= link_to "Visit website", school.website %>
-            <% else %>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            <%end %>
-        </div><!-- /.col-lg-4 -->
+<div class="content">
+   <div class="container">
+     <div class="content-grids">
+   <% @schools.each do |school| %>
+      <% if school.approved? %> 
+       <div class="col-md-4 content-grid1">
+          <% if !school.picture_url.nil? %>
+            <%= link_to image_tag(school.picture_url), controller: 'schools', action: 'show', id: school.id%>
+         <% else %>
+            <%= link_to image_tag("school_children.jpg"), controller: 'schools', action: 'show', id: school.id%>
          <% end %>
-        <%end %>
+         <h3><%= school.name %></h3>
+         <p><%= school.description %></p>
+         <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %>
        </div>
-    </div>
-
-
- 
+        <% end %>
+       <% end %>
+       <div class="clearfix"></div>
+     </div>
+   </div>
+    <%= will_paginate @schools %>
+   </div>

@@ -1,17 +1,28 @@
 <div class="header">
 	 <div class="container">
 		 <div class="logo">
-			   <h1><a href="index.html">Schools.ng</a></h1>
+			   <h1><%= link_to "Schools.ng", root_path %></h1>
 		 </div>	
 		 <div class="top-menu">
 			 <span class="menu"></span>
 			  <ul>
-				 <li class="active"><a href="index.html">HOME</a></li>
-				 <li><a href="about.html">ABOUT US</a></li>
-				 <li><a href="gallery.html">GALLERY</a></li>
-				 <li><a href="404.html">TRAINING</a></li>
-				 <li><a href="event.html">NEWS & EVENTS</a></li>
-				 <li><a href="contact.html">CONTACT</a></li>
+			  	<% if current_page?(root_path) %>
+				 	<li class="active"><%= link_to "HOME", root_path %></li>
+				 	<li><%= link_to "ABOUT US", about_path %></li>
+				 	<li><%= link_to "CONTACT", contact_path %></li>
+				<% elsif current_page?(controller: 'schools', action: 'about') %>
+					<li><%= link_to "HOME", root_path %></li>
+				 	<li class="active"><%= link_to "ABOUT US", about_path %></li>
+				 	<li><%= link_to "CONTACT", contact_path %></li>
+				<% elsif current_page?(controller: 'schools', action: 'contact')%>
+					<li><%= link_to "HOME", root_path %></li>
+				 	<li><%= link_to "ABOUT US", about_path %></li>
+				 	<li class="active"><%= link_to "CONTACT", contact_path %></li>
+				<% else %>
+					<li><%= link_to "HOME", root_path %></li>
+				 	<li><%= link_to "ABOUT US", about_path %></li>
+				 	<li><a href="contact.html">CONTACT</a></li>
+				<% end %>
 			 </ul>			 
 		 </div>			
 		 <!-- script-for-menu -->
@@ -31,10 +42,10 @@
 <div class="strip">
 	 <div class="container">
 	 <div class="search">
-		    <form>
-		    	<input type="text" value="" placeholder="Search...">
-				<input type="submit" value="">
-			</form>
+ <%= form_tag(search_path, method: :get) do  %>
+      <%= text_field_tag :query, params[:query], { placeholder: "Start typing"}%>
+      <%= submit_tag ''%>
+  <% end %>
      </div>     
 	 <div class="social">			 
 			 <a href="#"><i class="facebook"></i></a>

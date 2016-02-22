@@ -2,30 +2,30 @@
 
 <h1>Add new school</h1>
 
-<div class="row">
-	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="contact">
+	 <div class="container">
+		 <div class="contact-grids">
 		<%= form_for(@school, html: {multipart: true}) do |f| %>
 			<%= render 'shared/error_messages', object: f.object %> <!-- f.object utilzes object.count for this form, so errors listed rely on the validations made in the school model -->
-			<%= f.label :name %>
-			<%= f.text_field :school_name, class: 'form-control' %>
+			
+			<%= f.text_field :name, placeholder: 'Name' %>
 
-			<%= f.label :address %>
-			<%= f.text_field :school_address, class: 'form-control' %>
+			
+			<%= f.text_field :address, placeholder: 'Address'%>
 
-			<%= f.label :description %>
-			<%= f.text_area :school_description, class: 'form-control' %>
 
-			<%= f.label :location %>
-			<%= f.text_field :location, class: 'form-control', id: 'autoLocation' %>
+			<%= f.text_field :location, placeholder: 'Location', id: 'autoLocation' %>
 
-			<%= f.label :website %>
-			<%= f.text_field :website, class: 'form-control' %>
+			<%= f.text_field :website, placeholder: 'Website'%>
+			
+			<%= f.text_area :description, placeholder: 'Description' %>
+
 
 			<%= f.label :category %>
 			<%= f.select(:category, ["Creche", "Primary", "Secondary", "Primary&Secondary", "University"], {class: "form-control"} ) %> <!-- f.select is used to create dropdown lists and has many ways of passing values -->
 
 			<%= f.label :classification %>
-			<%= f.select(:classification, ["Federal", "State", "Private"], {class: "form-control"})  %>
+			<%= f.select(:classification, ["Federal", "State", "Private"])  %>
 
 
 			<span class = "picture">
@@ -35,5 +35,7 @@
 
 			<%= f.submit "Post", class: 'btn btn-primary' %>
 		<% end %>
-	</div>
-</div>
+		</div>
+		</div>
+		</div>
+

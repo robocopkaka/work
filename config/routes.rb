@@ -6,9 +6,9 @@ Rails.application.routes.draw do
 
   get 'approve' => 'school_admins#approve'
 
-  get 'about' => 'static_pages#about'
+  get 'about' => 'schools#about'
 
-  get 'contact' => 'static_pages#contact'
+  get 'contact' => 'schools#contact'
 
   get 'schools/new'
 
@@ -44,6 +44,13 @@ Rails.application.routes.draw do
 
   get 'creches' => 'schools#creches'
   root'schools#index'
+
+
+    resources :schools do
+     get :autocomplete_school_school_name, on: :collection
+     get :autocomplete_school_location, on: :collection
+   end
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

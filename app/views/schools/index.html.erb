@@ -18,68 +18,85 @@
 	         <li>
 				  <%= image_tag("work/images/school_children.jpg")%>
 				  <div class="banner-info">
-				  <h3>Sed ultricies elementum.</h3>
-				  <p>Lorem Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec a odio quam. Aenean ipsum arcu, 
-				  luctus vel ultricies ut, commodo sed turpis. Phasellus tristique lorem sit amet tellus dignissim hendrerit.
-				  In hac habitasse platea dictumst. Sed vehicula volutpat varius elit. consectetur adipiscing elit.</p>
+				  <h3>Find Primary and Secondary Schools</h3>
+				  <p>Just moved, and looking for a school for your children. Look no further. No matter the state, we've got 
+				  you covered</p>
 				  </div>
 	         </li>
 	         <li>
-				 <%= image_tag("work/images/bnr2.jpg")%>
+				 <%= image_tag("work/images/Nigerian-university-students.jpg")%>
 	        	 <div class="banner-info">
-				  <h3>Curabitur turpis posuere rutrum.</h3>
-				  <p>Lorem Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec a odio quam. Aenean ipsum arcu, 
-				  luctus vel ultricies ut, commodo sed turpis. Phasellus tristique lorem sit amet tellus dignissim hendrerit.
-				  In hac habitasse platea dictumst. Sed vehicula volutpat varius elit. consectetur adipiscing elit.</p>
+				  <h3>Or the university of your liking</h3>
+				  <p>Or you're just about to leave secondary school, and you're looking to find a university in any state without looking
+				  for a JAMB brochure, we're right here</p>
 				  </div>
 			 </li>
 	         <li>
-	             <%= image_tag("work/images/bnr1.jpg")%>
+	             <%= image_tag("work/images/Creche.jpg")%>
 	        	 <div class="banner-info">
-				  <h3>Sed ultricies elementum.</h3>
-				  <p>Lorem Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec a odio quam. Aenean ipsum arcu, 
-				  luctus vel ultricies ut, commodo sed turpis. Phasellus tristique lorem sit amet tellus dignissim hendrerit.
-				  In hac habitasse platea dictumst. Sed vehicula volutpat varius elit. consectetur adipiscing elit.</p>
+				  <h3>A lovely creche for your little ones</h3>
+				  <p>Why go through the hassle of finding a creche around your house or work place, when you can just use us? We
+				  provide results within a 10 mile radius of whereever you are</p>
 				  </div>
 	         </li>
 	      </ul>
 	  </div>
   </div>
-<!---->
+
 				
-	 <!---start-content----->
+	
 	 <div class="banner-bottom-grids">
 		 <div class="container">
+		 <%= link_to  creches_path do %>
 			 <div class="col-md-6 banner-text-info clr1">
 				 <i class="icon1"></i>
 				 <div class="bnr-text">				 
-					 <h3>CHAMPIONS LEAGUE</h3>
-					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
+					 <h3>Creches</h3>
+					 <p>Find creches around you</p>
 				 </div>
 			 </div>
+			 <% end %>
+
+			 <%= link_to primary_path do %>
 			 <div class="col-md-6 banner-text-info clr2">	
 				 <i class="icon2"></i>
 				 <div class="bnr-text">
-					 <h3>NEWS & EVENTS</h3>
-					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
+					 <h3>Primary Schools</h3>
+					 <p>Find solely primary schools and primary schools only</p>
 				 </div>
 			 </div>
+			 <% end %>
 			 <div class="clearfix"></div>
 			 
+			 <%= link_to secondary_path do %>
 			 <div class="col-md-6 banner-text-info clr3 btm">	
 				 <i class="icon3"></i>
 				 <div class="bnr-text">
-					 <h3>TRAINING</h3>
-					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
+					 <h3>Secondary schools</h3>
+					 <p>Find solely secondary schools and secondary schools only</p>
 				 </div>
 			 </div>
+			 <% end %>
+
+			 <%= link_to primary_and_secondary_path do %>
 			 <div class="col-md-6 banner-text-info clr4 btm">	
 				 <i class="icon4"></i>
 				 <div class="bnr-text">
-					 <h3>FINAL TOURNAMENT</h3>
-					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
+					 <h3>Primary and Secondary Schools</h3>
+					 <p>Find mixed primary and secondary schools</p>
 				 </div>
 			 </div>
+			 <% end %>
+			 <div class="clearfix"></div>
+			 <%= link_to universities_path do %>
+			 <div class="col-md-6 banner-text-info clr4 btm">	
+				 <i class="icon4"></i>
+				 <div class="bnr-text">
+					 <h3>Universities</h3>
+					 <p>Or looking for a university</p>
+				 </div>
+			 </div>
+			 <% end %>
 			 <div class="clearfix"></div>
 		 </div>
 	 </div>
@@ -91,25 +108,34 @@
 	 <div class="container">
 		 <div class="content-grids">
 			 <div class="col-md-4 content-grid1">
-				 <%= image_tag("work/images/c1.jpg")%>
-				 <h3>Champion's League</h3>
-				 <p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
-				 Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
-				 <a href="#">Read More..</a>
+			 	<% if !@school1.picture_url.nil? %>
+				 <%= image_tag(@school1.picture_url)%>
+				<% else %>
+				<%= image_tag("school_children.jpg")%>
+				<% end %>
+				 <h3><%= @school1.name %></h3>
+				 <p><%= @school1.description %></p>
+				 <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school1.id %>
 			 </div>
 			 <div class="col-md-4 content-grid1">
-				 <%= image_tag("work/images/c2.jpg")%>
-				 <h3>Women's Cup</h3>
-				 <p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
-				 Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
-				 <a href="#">Read More..</a>
+			 	<% if !@school2.picture_url.nil? %>
+					 <%= image_tag(@school2.picture_url)%>
+				<% else %>
+					<%= image_tag("school_children.jpg")%>
+				<% end %>
+				 <h3><%= @school2.name %></h3>
+				 <p><%= @school2.description %></p>
+				 <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school2.id %>
 			 </div>
 			 <div class="col-md-4 content-grid1">
-				 <%= image_tag("work/images/c3.jpg")%>
-				 <h3>Final Tournment</h3>
-				 <p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
-				 Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
-				 <a href="#">Read More..</a>
+			 	<% if !@school1.picture_url.nil? %>
+				    <%= image_tag(@school1.picture_url)%>
+				<% else %>
+				   	<%= image_tag("school_children.jpg")%>
+				<% end %>
+				 <h3><%= @school3.name %></h3>
+				 <p><%= @school3.description %></p>
+				 <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school3.id %>
 			 </div>
 			 <div class="clearfix"></div>
 		 </div>
@@ -120,47 +146,23 @@
 <div class="content-info">
 	 <div class="container">
 		 <div class="content-bottom-grids">
-			 <div class="col-md-4 popular">	
-				 <h3>POPULAR TAGS</h3>
-				 <ul>
-					 <li><a href="#">Ut vehicula nisl ut purus tempus aliquet.</a></li>
-					 <li><a href="#">Nullam a risus pharetra nisi commodo auctor.</a></li>
-					 <li><a href="#">Proin venenatis velit a fringilla rutrum.</a></li>
-					 <li><a href="#">Nunc facilisis dolor ac suscipit volutpat.</a></li>
-					 <li><a href="#">Cras tempor justo ac mauris laoreet lacus efficitur.</a></li>
-					 <li><a href="#">Sed tincidunt enim ac elit tempor erat consequat.</a></li>
-					 <li><a href="#">Proin venenatis velit a fringilla rutrum.</a></li>
-					 <li><a href="#"> Aliquam vulputate mi vestibulum mauris ultrices.</a></li>
-				 </ul>
-			 </div>
 			 <div class="col-md-4 welcome-pic">
 				 <h3>ABOUT</h3>
-				 <h4>Morbi sed arcu mollis, elementum erat venenatis, tincidunt tellus.</h4>
-				 <%= image_tag("work/images/cnt.ab.jpg")%>
-				 <p>Aenean ut condimentum magna, mattis pretium massa. Sed sollicitudin ullamcorper auctor. Duis vestibulum velit id augue pulvinar egestas. 
-				 Morbi sed orci auctor, feugiat felis at, fermentum magna. In ac egestas lectus.</p>
+				 <h4>Find that school</h4>
+				 <%= image_tag("school_children.jpg")%>
+				 <p>We exist solely to make your school hunting really easy. You'd save fuel, time and energy looking for a school.
+				 Even if you just want to check up on your alma mater, we're your best bet.</p>
 			</div>
 			<div class="col-md-4 coach">
-				 <h3>OUR COACHES</h3>
+				 <h3>Developers</h3>
 				 <div class="coch-grid chr">
 					 <div class="coach-pic">
-						 <%= image_tag("work/images/ch1.jpg")%>
+						 <%= image_tag("work/images/kachi.jpg")%>
 					 </div>
 					 <div class="coach-pic-info">
-						 <h4><a href="#">Phasellus at Tellus</a></h4>
-						 <h5>Aenean vestibulum </h5>
-						 <p>Donec ornare massa at velit fringilla, condimentum magna ornare tincidunt nulla dignissim.</p>
-					 </div>
-					 <div class="clearfix"></div>
-				 </div>
-				 <div class="coch-grid">
-					 <div class="coach-pic">
-						 <%= image_tag("work/images/ch2.jpg")%>
-					 </div>
-					 <div class="coach-pic-info">
-						 <h4><a href="#">Phasellus at Tellus</a></h4>
-						 <h5>Aenean vestibulum </h5>
-						 <p>Donec ornare massa at velit fringilla, condimentum magna ornare tincidunt nulla dignissim.</p>
+						 <h4><a href="#">Okereke Onyekachi</a></h4>
+						 <h5>Rails Dev </h5>
+						 <p>Some peopke think I scare them, but I'm friendly</p>
 					 </div>
 					 <div class="clearfix"></div>
 				 </div>
@@ -171,3 +173,9 @@
 </div>
 <!-- //content-bottom -->
 <!--footer-->
+
+<% unless @lat_lng %>
+  <script>
+    getGeoLocation();
+  </script>
+<% end %>
