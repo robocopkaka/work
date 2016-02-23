@@ -6,23 +6,64 @@
 		 <div class="top-menu">
 			 <span class="menu"></span>
 			  <ul>
+			  <% if !logged_in? %>
 			  	<% if current_page?(root_path) %>
 				 	<li class="active"><%= link_to "HOME", root_path %></li>
 				 	<li><%= link_to "ABOUT US", about_path %></li>
 				 	<li><%= link_to "CONTACT", contact_path %></li>
+				 	<li><%= link_to "ADMIN", login_path %></li>
 				<% elsif current_page?(controller: 'schools', action: 'about') %>
 					<li><%= link_to "HOME", root_path %></li>
 				 	<li class="active"><%= link_to "ABOUT US", about_path %></li>
 				 	<li><%= link_to "CONTACT", contact_path %></li>
+				 	<li><%= link_to "ADMIN", login_path %></li>
 				<% elsif current_page?(controller: 'schools', action: 'contact')%>
 					<li><%= link_to "HOME", root_path %></li>
 				 	<li><%= link_to "ABOUT US", about_path %></li>
 				 	<li class="active"><%= link_to "CONTACT", contact_path %></li>
+				 	<li><%= link_to "ADMIN", login_path %></li>
+				 <% elsif current_page?(controller: 'sessions', action: 'new') %>
+				 	<li><%= link_to "HOME", root_path %></li>
+				 	<li><%= link_to "ABOUT US", about_path %></li>
+				 	<li><%= link_to "CONTACT", contact_path %></li>
+				 	<li class="active"><%= link_to "ADMIN", login_path %></li>
 				<% else %>
 					<li><%= link_to "HOME", root_path %></li>
 				 	<li><%= link_to "ABOUT US", about_path %></li>
 				 	<li><a href="contact.html">CONTACT</a></li>
+				 	<li><%= link_to "ADMIN", login_path %></li>
 				<% end %>
+
+
+			<% else %>
+				<% if current_page?(root_path) %>
+				 	<li class="active"><%= link_to "HOME", root_path %></li>
+				 	<li><%= link_to "ABOUT US", about_path %></li>
+				 	<li><%= link_to "CONTACT", contact_path %></li>
+				 	<li><%= link_to "LOGOUT", logout_path %></li>
+				<% elsif current_page?(controller: 'schools', action: 'about') %>
+					<li><%= link_to "HOME", root_path %></li>
+				 	<li class="active"><%= link_to "ABOUT US", about_path %></li>
+				 	<li><%= link_to "CONTACT", contact_path %></li>
+				 	<li><%= link_to "LOGOUT", logout_path %></li>
+				<% elsif current_page?(controller: 'schools', action: 'contact')%>
+					<li><%= link_to "HOME", root_path %></li>
+				 	<li><%= link_to "ABOUT US", about_path %></li>
+				 	<li class="active"><%= link_to "CONTACT", contact_path %></li>
+				 	<li><%= link_to "LOGOUT", logout_path %></li>
+				 <% elsif current_page?(controller: 'sessions', action: 'destroy') %>
+				 	<li><%= link_to "HOME", root_path %></li>
+				 	<li><%= link_to "ABOUT US", about_path %></li>
+				 	<li><%= link_to "CONTACT", contact_path %></li>
+				 	<li class="active"><%= link_to "LOGOUT", logout_path %></li>
+				<% else %>
+					<li><%= link_to "HOME", root_path %></li>
+				 	<li><%= link_to "ABOUT US", about_path %></li>
+				 	<li><a href="contact.html">CONTACT</a></li>
+				 	<li><%= link_to "LOGOUT", logout_path %></li>
+				<% end %>
+			<% end %>
+
 			 </ul>			 
 		 </div>			
 		 <!-- script-for-menu -->

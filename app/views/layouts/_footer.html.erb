@@ -5,10 +5,17 @@
 		 </div>
 		 <div class="footer-menu">
 			 <ul>
-				 <li><%= link_to "HOME", root_path %></li>
-				 <li><%= link_to "ABOUT US", about_path %></li>
-				 <li><%= link_to "CONTACT", contact_path %></li>
-				 <li><%= link_to "ADMIN", login_path %></li>
+			 	<% if !logged_in? %>
+					 <li><%= link_to "HOME", root_path %></li>
+					 <li><%= link_to "ABOUT US", about_path %></li>
+					 <li><%= link_to "CONTACT", contact_path %></li>
+					 <li><%= link_to "ADMIN", login_path %></li>
+				<% else %>
+					<li><%= link_to "HOME", root_path %></li>
+				    <li><%= link_to "ABOUT US", about_path %></li>
+				    <li><%= link_to "CONTACT", contact_path %></li>
+					<li><%= link_to "LOGOUT", logout_path %></li>
+				<% end %>
 			 </ul>
 		 </div>
 		 <div class="clearfix"></div>
