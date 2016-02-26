@@ -118,6 +118,7 @@
 <div class="content">
 	 <div class="container">
 		 <div class="content-grids">
+		 	<%= link_to school_path(@school1) do %>
 			 <div class="col-md-4 content-grid1">
 			 	<% if !@school1.picture_url.nil? %>
 				 <%= image_tag(@school1.picture_url)%>
@@ -126,8 +127,11 @@
 				<% end %>
 				 <h3><%= @school1.name %></h3>
 				 <p><%= @school1.description %></p>
-				 <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school1.id %>
+				<!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school1.id %> -->
 			 </div>
+			 <% end %>
+
+			 <%= link_to school_path(@school2) do %>
 			 <div class="col-md-4 content-grid1">
 			 	<% if !@school2.picture_url.nil? %>
 					 <%= image_tag(@school2.picture_url)%>
@@ -136,8 +140,11 @@
 				<% end %>
 				 <h3><%= @school2.name %></h3>
 				 <p><%= @school2.description %></p>
-				 <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school2.id %>
+				<!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school2.id %> -->
 			 </div>
+			 <% end %>
+
+			 <%= link_to school_path(@school3) do %>
 			 <div class="col-md-4 content-grid1">
 			 	<% if !@school1.picture_url.nil? %>
 				    <%= image_tag(@school1.picture_url)%>
@@ -146,8 +153,9 @@
 				<% end %>
 				 <h3><%= @school3.name %></h3>
 				 <p><%= @school3.description %></p>
-				 <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school3.id %>
+				<!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school3.id %> -->
 			 </div>
+			 <% end %>
 			 <div class="clearfix"></div>
 		 </div>
 	 </div>

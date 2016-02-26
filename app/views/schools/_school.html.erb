@@ -4,16 +4,18 @@
      <div class="content-grids">
    <% @schools.each do |school| %>
       <% if school.approved? %> 
+      <% link_to school_path(school) %>
        <div class="col-md-4 content-grid1">
           <% if !school.picture_url.nil? %>
-            <%= link_to image_tag(school.picture_url), controller: 'schools', action: 'show', id: school.id%>
+            <%= link_to image_tag(school.picture_url)%>
          <% else %>
-            <%= link_to image_tag("school_children.jpg"), controller: 'schools', action: 'show', id: school.id%>
+            <%= image_tag("school_children.jpg")%>
          <% end %>
          <h3><%= school.name %></h3>
          <p><%= school.description %></p>
          <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %>
        </div>
+       <% end %>
         <% end %>
        <% end %>
        <div class="clearfix"></div>
