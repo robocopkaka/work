@@ -13,7 +13,8 @@
          <% end %>
          <h3><%= school.name %></h3>
          <p><%= school.description %></p>
-         <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %>
+         <p> State:  <%= school.location  %> </p>
+        <!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %> -->
        </div>
        <% end %>
         <% end %>

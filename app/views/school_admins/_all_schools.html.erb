@@ -12,8 +12,9 @@
          <% end %>
          <h3><%= school.name %></h3>
          <p><%= school.description %></p>
-         <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %>
-         <% if !school.approved? %>
+         <p> State:  <%= school.location  %> </p>
+       <!--   <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %>
+         <% if !school.approved? %> -->
             <p> <%= link_to "Approve", controller: "school_admins", action: "approve", id: school.id %> </p>
             <% else %> <!-- end for approve button if block -->
             <p> <%= link_to "Remove", controller: "school_admins", action: "approve", id: school.id %> </p>
