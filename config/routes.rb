@@ -28,6 +28,8 @@ Rails.application.routes.draw do
 
   get 'signup' => 'users#new'
 
+  get 'users/show'
+
   get 'login' => 'sessions#new' #path to log in form for creating a new new session, becomes login_path
 
   post 'login' => 'sessions#create' #path to actually log in, and create a new session for the user
