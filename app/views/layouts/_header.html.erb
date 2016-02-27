@@ -12,38 +12,26 @@
 				 	<li><%= link_to "ABOUT US", about_path %></li>
 				 	<li><%= link_to "CONTACT", contact_path %></li>
 				 	<li><%= link_to "ADD A SCHOOL", new_school_path %> </li>
-				 	<li><%= link_to "ADMIN", login_path %></li>
-				 	<li><%= link_to "ADD A SCHOOL", new_school_path %> </li>
 				<% elsif current_page?(controller: 'schools', action: 'about') %>
 					<li><%= link_to "HOME", root_path %></li>
 				 	<li class="active"><%= link_to "ABOUT US", about_path %></li>
 				 	<li><%= link_to "CONTACT", contact_path %></li>
 				 	<li><%= link_to "ADD A SCHOOL", new_school_path %> </li>
-				 	<li><%= link_to "ADMIN", login_path %></li>
 				<% elsif current_page?(controller: 'schools', action: 'contact')%>
 					<li><%= link_to "HOME", root_path %></li>
 				 	<li><%= link_to "ABOUT US", about_path %></li>
 				 	<li class="active"><%= link_to "CONTACT", contact_path %></li>
 				 	<li><%= link_to "ADD A SCHOOL", new_school_path %> </li>
-				 	<li><%= link_to "ADMIN", login_path %></li>
 				 <% elsif current_page?(controller: 'users', action: 'show') %>
 				 	<li><%= link_to "HOME", root_path %></li>
 				 	<li><%= link_to "ABOUT US", about_path %></li>
 				 	<li><%= link_to "CONTACT", contact_path %></li>
 				 	<li class="active"><%= link_to "ADD A SCHOOL", new_school_path %> </li>
-				 	<li><%= link_to "ADMIN", login_path %></li>
-				 <% elsif current_page?(controller: 'sessions', action: 'new') %>
-				 	<li><%= link_to "HOME", root_path %></li>
-				 	<li><%= link_to "ABOUT US", about_path %></li>
-				 	<li><%= link_to "CONTACT", contact_path %></li>
-				 	<li><%= link_to "ADD A SCHOOL", new_school_path %> </li>
-				 	<li class="active"><%= link_to "ADMIN", login_path %></li>
 				<% else %>
 					<li><%= link_to "HOME", root_path %></li>
 				 	<li><%= link_to "ABOUT US", about_path %></li>
 				 	<li><%= link_to "CONTACT", contact_path %></li>
 				 	<li><%= link_to "Add a School", new_school_path %> </li>
-				 	<li><%= link_to "ADMIN", login_path %></li>
 				<% end %>
 
 
