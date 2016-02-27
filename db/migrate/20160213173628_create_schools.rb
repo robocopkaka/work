@@ -7,7 +7,7 @@ class CreateSchools < ActiveRecord::Migration
       t.string :location
       t.string :website
       t.string :picture
-      t.boolean :approved, default: false
+      t.boolean :approved, null: false, default: false
       t.float :latitude
       t.float :longitude
       t.string :classification
