@@ -1,0 +1,26 @@
+
+<div class="content">
+   <div class="container">
+     <div class="content-grids">
+   <% @schools.each do |school| %>
+    <% if school.approved? %>
+    <%= link_to school_path(school) do %>
+       <div class="col-md-4 content-grid1">
+          <% if !school.picture_url.nil? %>
+            <%= image_tag(school.picture_url)%>
+         <% else %>
+            <%= image_tag("school_children.jpg")%>
+         <% end %>
+         <h3><%= school.name %></h3>
+         <p><%= school.description %></p>
+         <p> State:  <%= school.location  %> </p>
+       <!--   <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %> -->
+       </div>
+       <% end %>
+       <% end %>
+        
+       <% end %>
+       <div class="clearfix"></div>
+     </div>
+   </div>
+   </div>

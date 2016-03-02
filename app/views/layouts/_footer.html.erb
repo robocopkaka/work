@@ -6,18 +6,76 @@
 		 <div class="footer-menu">
 			 <ul>
 			 	<% if !logged_in? %>
-					 <li><%= link_to "HOME", root_path %></li>
-					 <li><%= link_to "ABOUT US", about_path %></li>
-					 <li><%= link_to "CONTACT", contact_path %></li>
-					 <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
-					 <li><%= link_to "ADMIN", login_path %></li>
+			 		<% if current_page?(root_path) %>
+						 <li class="active"><%= link_to "HOME", root_path %></li>
+						 <li><%= link_to "ABOUT US", about_path %></li>
+						 <li><%= link_to "CONTACT", contact_path %></li>
+						 <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+					<% elsif current_page?(controller: 'schools', action: 'about') %>
+						 <li><%= link_to "HOME", root_path %></li>
+						 <li class = "active"><%= link_to "ABOUT US", about_path %></li>
+						 <li><%= link_to "CONTACT", contact_path %></li>
+						 <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+					<% elsif current_page?(controller: 'schools', action: 'contact') %>
+						 <li><%= link_to "HOME", root_path %></li>
+						 <li><%= link_to "ABOUT US", about_path %></li>
+						 <li class = "active"><%= link_to "CONTACT", contact_path %></li>
+						 <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+					<% elsif current_page?(controller: 'schools', action: 'new') %>
+						 <li><%= link_to "HOME", root_path %></li>
+						 <li><%= link_to "ABOUT US", about_path %></li>
+						 <li><%= link_to "CONTACT", contact_path %></li>
+						 <li class = "active"><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+					<% else %>
+						 <li><%= link_to "HOME", root_path %></li>
+						 <li><%= link_to "ABOUT US", about_path %></li>
+						 <li><%= link_to "CONTACT", contact_path %></li>
+						 <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+					<% end %>
 				<% else %>
-					<li><%= link_to "HOME", root_path %></li>
-				    <li><%= link_to "ABOUT US", about_path %></li>
-				    <li><%= link_to "CONTACT", contact_path %></li>
-				    <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
-				 	<li><%= link_to "PROFILE", user_path(session[:user_id])%> </li>
-					<li><%= link_to "LOGOUT", logout_path %></li>
+					<% if current_page?(root_path) %>
+						 <li class="active"><%= link_to "HOME", root_path %></li>
+						 <li><%= link_to "ABOUT US", about_path %></li>
+						 <li><%= link_to "CONTACT", contact_path %></li>
+						 <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+						 <li><%= link_to "PROFILE", user_path(session[:user_id])%> </li>
+						 <li><%= link_to "LOGOUT", logout_path %></li>
+					<% elsif current_page?(controller: 'schools', action: 'about') %>
+						 <li><%= link_to "HOME", root_path %></li>
+						 <li class = "active"><%= link_to "ABOUT US", about_path %></li>
+						 <li><%= link_to "CONTACT", contact_path %></li>
+						 <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+						 <li><%= link_to "PROFILE", user_path(session[:user_id])%> </li>
+						 <li><%= link_to "LOGOUT", logout_path %></li>
+					<% elsif current_page?(controller: 'schools', action: 'contact') %>
+						 <li><%= link_to "HOME", root_path %></li>
+						 <li><%= link_to "ABOUT US", about_path %></li>
+						 <li class = "active"><%= link_to "CONTACT", contact_path %></li>
+						 <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+						 <li><%= link_to "PROFILE", user_path(session[:user_id])%> </li>
+						 <li><%= link_to "LOGOUT", logout_path %></li>
+					<% elsif current_page?(controller: 'schools', action: 'new') %>
+						 <li><%= link_to "HOME", root_path %></li>
+						 <li><%= link_to "ABOUT US", about_path %></li>
+						 <li><%= link_to "CONTACT", contact_path %></li>
+						 <li class = "active"><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+						 <li><%= link_to "PROFILE", user_path(session[:user_id])%> </li>
+						 <li><%= link_to "LOGOUT", logout_path %></li>
+					<% elsif current_page?(controller: 'users', action: 'show') %>
+						 <li><%= link_to "HOME", root_path %></li>
+						 <li><%= link_to "ABOUT US", about_path %></li>
+						 <li><%= link_to "CONTACT", contact_path %></li>
+						 <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+						 <li class = "active"><%= link_to "PROFILE", user_path(session[:user_id])%> </li>
+						 <li><%= link_to "LOGOUT", logout_path %></li>
+					<% else %>
+						 <li><%= link_to "HOME", root_path %></li>
+					     <li><%= link_to "ABOUT US", about_path %></li>
+					     <li><%= link_to "CONTACT", contact_path %></li>
+					     <li><%= link_to "ADD A SCHOOL", new_school_path, 'data-no-turbolink' => true %> </li>
+					 	 <li><%= link_to "PROFILE", user_path(session[:user_id])%> </li>
+						 <li><%= link_to "LOGOUT", logout_path %></li>
+					<% end %>
 				<% end %>
 			 </ul>
 		 </div>
