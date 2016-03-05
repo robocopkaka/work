@@ -67,7 +67,7 @@ class SchoolsController < ApplicationController
   end
 
   def search
-    @schools = School.contains_name_and_state(params[:query]).approved_true.paginate(page: params[:page], per_page: 10)
+    @schools = School.contains_name_and_category_and_state(params[:query]).approved_true.paginate(page: params[:page], per_page: 10)
   end
 
   def states

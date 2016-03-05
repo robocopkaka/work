@@ -108,7 +108,7 @@
 	 <div class="container">
 	 <div class="search">
  <%= form_tag(search_path, method: :get) do  %>
-      <%= text_field_tag :query, params[:query], { placeholder: "Type a school's name or state"}%>
+      <%= text_field_tag :query, params[:query], { placeholder: "Type a school's name or state or the type of school"}%>
       <%= submit_tag ''%>
   <% end %>
      </div>     
