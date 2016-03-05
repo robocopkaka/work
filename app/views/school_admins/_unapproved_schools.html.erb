@@ -3,6 +3,7 @@
    <div class="container">
      <div class="content-grids">
    <% @schools.each do |school| %>
+   <% if !school.approved? %>
     <%= link_to school_path(school) do %>
        <div class="col-md-4 content-grid1">
           <% if !school.picture_url.nil? %>
@@ -16,6 +17,7 @@
         <!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %> -->
             <p> <%= link_to "Approve", controller: "school_admins", action: "approve", id: school.id %> </p>
        </div>
+       <% end %>
        <% end %>
        <% end %>
        <div class="clearfix"></div>

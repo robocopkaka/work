@@ -13,12 +13,8 @@
          <h3><%= school.name %></h3>
          <p><%= truncate(school.description, length: 100) %></p>
          <p> State:  <%= school.location  %> </p>
-       <!--   <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %>
-         <% if !school.approved? %> -->
-            <p> <%= link_to "Approve", controller: "school_admins", action: "approve", id: school.id %> </p>
-            <% else %> <!-- end for approve button if block -->
-            <p> <%= link_to "Remove", controller: "school_admins", action: "approve", id: school.id %> </p>
-          <% end %>
+       <!--   <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %> -->
+         
        </div>
        <% end %>
         
