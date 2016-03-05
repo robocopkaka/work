@@ -7,12 +7,12 @@
       <%= link_to school_path(school) do %>
        <div class="col-md-4 content-grid1">
           <% if !school.picture_url.nil? %>
-            <%= image_tag(school.picture_url)%>
+            <%= image_tag(school.picture_url(:thumb))%>
          <% else %>
             <%= image_tag("school_children.jpg")%>
          <% end %>
          <h3><%= school.name %></h3>
-         <p><%= school.description %></p>
+         <p><%= truncate(school.description, length: 100) %></p>
          <p> State:  <%= school.location  %> </p>
         <!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %> -->
          <% if !school.approved? %>
