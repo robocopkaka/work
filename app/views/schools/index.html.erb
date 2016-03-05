@@ -126,7 +126,7 @@
 				<%= image_tag("school_children.jpg")%>
 				<% end %>
 				 <h3><%= @school1.name %></h3>
-				 <p><%= @school1.description %></p>
+				 <p><%= truncate(@school3.description, length: 100) %></p>
 				<!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school1.id %> -->
 			 </div>
 			 <% end %>
@@ -139,7 +139,7 @@
 					<%= image_tag("school_children.jpg")%>
 				<% end %>
 				 <h3><%= @school2.name %></h3>
-				 <p><%= @school2.description %></p>
+				 <p><%= truncate(@school3.description, length: 100) %></p>
 				<!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school2.id %> -->
 			 </div>
 			 <% end %>
@@ -152,7 +152,7 @@
 				   	<%= image_tag("school_children.jpg")%>
 				<% end %>
 				 <h3><%= @school3.name %></h3>
-				 <p><%= @school3.description %></p>
+				 <p><%= truncate(@school3.description, length: 100) %></p>
 				<!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school3.id %> -->
 			 </div>
 			 <% end %>
