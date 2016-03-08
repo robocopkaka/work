@@ -147,7 +147,7 @@
 			 <%= link_to school_path(@school3) do %>
 			 <div class="col-md-4 content-grid1">
 			 	<% if !@school1.picture_url.nil? %>
-				    <%= image_tag(@school1.picture_url(:thumb))%>
+				    <%= image_tag(@school3.picture_url(:thumb))%>
 				<% else %>
 				   	<%= image_tag("school_children.jpg")%>
 				<% end %>
