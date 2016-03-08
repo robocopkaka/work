@@ -306,7 +306,7 @@ background-position:-167px -36px;
 }
 /*-- content --*/
 .content-grid1{
-	padding:10; /* former padding was 0 */
+	padding:10px; /* former padding was 0 */
 	width:32.15%;
 }
 .content-grid1:nth-child(2){
@@ -323,6 +323,12 @@ background-position:-167px -36px;
 	  font-family: 'Audiowide', cursive;
 }
 .content-grid1 h2{
+	color:#ed645c;
+	font-size:1.4em;
+	margin:12px 0 8px 0;
+	  font-family: 'Audiowide', cursive;
+}
+.content-grid1 h1{
 	color:#ed645c;
 	font-size:1.4em;
 	margin:12px 0 8px 0;
