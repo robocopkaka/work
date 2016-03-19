@@ -19,22 +19,23 @@
 			<%= f.text_field :address, placeholder: 'Address'%>
 
 
-			<%= f.text_field :location, placeholder: 'Location', id: 'autoLocation' %>
+			<%= f.text_field :location, placeholder: 'State', id: 'autoLocation' %>
 
-			<%= f.text_field :website, placeholder: 'Website'%>
-			
+		<!-- 	<%= f.text_field :website, placeholder: 'Website'%> 
+  -->	<!-- removed website for now, but leave it on the edit page		 -->
 			<%= f.text_area :description, placeholder: 'Description' %>
 
 
 			<%= f.label :category %>
 			<%= f.select(:category, ["Creche", "Primary", "Secondary", "Primary&Secondary", "University"], {class: "form-control"} ) %> <!-- f.select is used to create dropdown lists and has many ways of passing values -->
-
-			<%= f.label :classification %>
+ 
+ 			<!-- remove classification for now, but leave on edit page -->
+		<!-- 	<%= f.label :classification %>
 			<%= f.select(:classification, ["Federal", "State", "Private"])  %>
-
+ -->
 
 			<span class = "picture">
-				<%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+				<%= f.file_field :picture, value: "School Image", accept: 'image/jpeg,image/gif,image/png' %>
 				<%= f.hidden_field :picture_cache %>
 			</span>
 
