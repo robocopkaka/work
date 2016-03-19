@@ -59,11 +59,17 @@ class SchoolsController < ApplicationController
   	if params[:query].present?
   		render 'search'
   	end
-    count = School.count
-  random_offset = rand(count)
-    @school1 = School.where("category=?", "Primary").offset(random_offset).first
-    @school2 = School.where("category=?", "Secondary").offset(random_offset).second
-    @school3 = School.where("category=?", "University").offset(random_offset).third
+    primary_count = School.where("category=?", "Primary").count
+    secondary_count = School.where("category=?", "Secondary").count
+    university_count = School.where("category=?", "Primary").count
+
+  primary_random_offset = rand(primary_count)
+  secondary_random_offset = rand(secondary_count)
+  university_random_offset = rand(university_count)
+
+    @school1 = School.offset(primary_random_offset).first
+    @school2 = School.offset(secondary_random_offset).second
+    @school3 = School.offset(university_random_offset).third
   end
 
   def search
