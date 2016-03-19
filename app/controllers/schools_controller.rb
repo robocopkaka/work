@@ -61,9 +61,9 @@ class SchoolsController < ApplicationController
   	end
     count = School.count
   random_offset = rand(count)
-    @school1 = School.offset(random_offset).first
-    @school2 = School.offset(random_offset).second
-    @school3 = School.offset(random_offset).third
+    @school1 = School.where("category=?", "Primary").offset(random_offset).first
+    @school2 = School.where("category=?", "Secondary").offset(random_offset).second
+    @school3 = School.where("category=?", "University").offset(random_offset).third
   end
 
   def search
