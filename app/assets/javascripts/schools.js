@@ -94,9 +94,3 @@ jQuery(function() {
 });
 
 
-$("#span.picture").on("change", "input", function(){
-  if $(this).val() == ''
-    $(this).closest("td").find("div").slideDown();
-  else
-    $(this).closest("td").find("div").slideUp(); 
-});
