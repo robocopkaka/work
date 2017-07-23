@@ -1,115 +1,18 @@
 
 <!-- banner -->
 <div class="banner">
-		<script src="js/responsiveslides.min.js"></script>
-  <script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	speed: 300,
-        manualControls: '#slider3-pager',
-      });
-    });
-  </script>
+	<ul class="nav nav-pills nav-justified">
+		<li class="active"><a href="#featured-schools" data-toggle="tab">Featured Schools</a></li>
+		<li><a href="#nearby-schools" data-toggle="tab">Nearby</a></li>
+	</ul>
 
- <div class="slider">
-	  <div class="callbacks_container">
-	     <ul class="rslides" id="slider">
-	         <li>
-				  <%= image_tag("work/images/school_children.jpg")%>
-				  <div class="banner-info">
-				  <h3>Find Primary and Secondary Schools</h3>
-				  <p>Just moved, and looking for a school for your children. Look no further. No matter the state, we've got 
-				  you covered</p>
-				  </div>
-	         </li>
-	         <li>
-				 <%= image_tag("work/images/expectant-students.jpg")%>
-	        	 <div class="banner-info">
-				  <h3>Or the university of your liking</h3>
-				  <p>Or you're just about to leave secondary school, and you're looking to find a university in any state without looking
-				  for a JAMB brochure, we're right here</p>
-				  </div>
-			 </li>
-	         <li>
-	             <%= image_tag("work/images/Creche.jpg")%>
-	        	 <div class="banner-info">
-				  <h3>A lovely creche for your little ones</h3>
-				  <p>Why go through the hassle of finding a creche around your house or work place, when you can just use us? We
-				  provide results within a 10 mile radius of whereever you are</p>
-				  </div>
-	         </li>
-	      </ul>
-	  </div>
-  </div>
-
-				
-	
-	 <div class="banner-bottom-grids">
-		 <div class="container">
-		 <%= link_to  creches_path do %>
-			 <div class="col-md-6 banner-text-info clr3 btm">
-				 <i class="icon1"></i>
-				 <div class="bnr-text">				 
-					 <h3>Creches</h3>
-					 <p>Find creches around you</p>
-				 </div>
-			 </div>
-			 <% end %>
-
-			 <%= link_to primary_path do %>
-			 <div class="col-md-6 banner-text-info clr4 btm">	
-				 <i class="icon2"></i>
-				 <div class="bnr-text">
-					 <h3>Primary Schools</h3>
-					 <p>Find solely primary schools and primary schools only</p>
-				 </div>
-			 </div>
-			 <% end %>
-			 <div class="clearfix"></div>
-			 
-			 <%= link_to secondary_path do %>
-			 <div class="col-md-6 banner-text-info clr3 btm">	
-				 <i class="icon3"></i>
-				 <div class="bnr-text">
-					 <h3>Secondary schools</h3>
-					 <p>Find solely secondary schools and secondary schools only</p>
-				 </div>
-			 </div>
-			 <% end %>
-
-			 <%= link_to primary_and_secondary_path do %>
-			 <div class="col-md-6 banner-text-info clr4 btm">	
-				 <i class="icon4"></i>
-				 <div class="bnr-text">
-					 <h3>Primary&Secondary Schools</h3>
-					 <p>Find mixed primary and secondary schools</p>
-				 </div>
-			 </div>
-			 <% end %>
-
-			 <div class="clearfix"></div>
-			 <%= link_to universities_path do %>
-			 <div class="col-md-6 banner-text-info clr3 btm">	
-				 <i class="icon4"></i>
-				 <div class="bnr-text">
-					 <h3>Universities</h3>
-					 <p>Or looking for a university</p>
-				 </div>
-			 </div>
-			 <% end %>
-
-			  <%= link_to new_school_path, 'data-no-turbolink' => true  do %>
-			 <div class="col-md-6 banner-text-info clr4 btm">	
-				 <i class="icon4"></i>
-				 <div class="bnr-text">
-					 <h3>Add a new school</h3>
-					 <p>Help the cause, and keep adding schools</p>
-				 </div>
-			 </div>
-			 <% end %>
-			 <div class="clearfix"></div>
-		 </div>
+	 <div class="tab-content">
+	 	<div class="tab-pane" id="featured-schools">
+	 		<%= render 'schools/school', :locals => {@schools => @schools} %>
+	 	</div>
+	 	<div class="tab-pane" id="nearby-schools">
+	 		<%= render 'schools/school', :locals => {@schools => @nearby_schools} %>
+	 	</div>
 	 </div>
 </div>
 <!-- //banner -->
@@ -117,51 +20,6 @@
 <!-- content -->
 <div class="content">
 	 <div class="container">
-	 	<h2 class = "fresh">Featured Schools</h2>
-		 <div class="content-grids">
-		 	<%= link_to school_path(@school1) do %>
-			 <div class="col-md-4 content-grid1">
-			 	<h3>Primary </h3>
-			 	<% if !@school1.picture_url.nil? %>
-				 <%= image_tag(@school1.picture_url(:thumb))%>
-				<% else %>
-				<%= image_tag("school_children.jpg")%>
-				<% end %>
-				 <h3><%= @school1.name %></h3>
-				 <p><%= truncate(@school3.description, length: 100) %></p>
-				<!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school1.id %> -->
-			 </div>
-			 <% end %>
-
-			 <%= link_to school_path(@school2) do %>
-			 <div class="col-md-4 content-grid1">
-			 <h3>Secondary </h3>
-			 	<% if !@school2.picture_url.nil? %>
-					 <%= image_tag(@school2.picture_url(:thumb))%>
-				<% else %>
-					<%= image_tag("school_children.jpg")%>
-				<% end %>
-				 <h3><%= @school2.name %></h3>
-				 <p><%= truncate(@school3.description, length: 100) %></p>
-				<!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school2.id %> -->
-			 </div>
-			 <% end %>
-
-			 <%= link_to school_path(@school3) do %>
-			 <div class="col-md-4 content-grid1">
-			 <h3>University </h3>
-			 	<% if !@school1.picture_url.nil? %>
-				    <%= image_tag(@school3.picture_url(:thumb))%>
-				<% else %>
-				   	<%= image_tag("school_children.jpg")%>
-				<% end %>
-				 <h3><%= @school3.name %></h3>
-				 <p><%= truncate(@school3.description, length: 100) %></p>
-				<!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: @school3.id %> -->
-			 </div>
-			 <% end %>
-			 <div class="clearfix"></div>
-		 </div>
 	 </div>
 </div>
 <!--- //content--->

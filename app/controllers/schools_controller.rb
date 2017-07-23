@@ -45,12 +45,12 @@ class SchoolsController < ApplicationController
   # display pages for schools and for getting schools of the same category that are within 10 miles of the school
   def show
      @school = School.find_by(id: params[:id])
-     @schools = School.near([@school.latitude,@school.longitude], 10).where("id != ? AND category = ?", @school.id, @school.category).limit(4)
+     @schools = School.near([@school.latitude,@school.longitude], 10).where("id != ? AND category = ?", @school.id, @school.category).limit(3)
   end
 
   def schools_near_you
     @lat_lng = cookies[:lat_lng].split("|")
-    @schools = School.near(@lat_lng, 10) #the second option will be the distance in miles. You can  change the dafault to km. Find out later
+    @schools = School.near(@lat_lng, 5) #the second option will be the distance in miles. You can  change the dafault to km. Find out later
   end
 
   #This action currently shows a search field on the index view
@@ -59,17 +59,16 @@ class SchoolsController < ApplicationController
   	if params[:query].present?
   		render 'search'
   	end
-    primary_count = School.where("category=?", "Primary").count
-    secondary_count = School.where("category=?", "Secondary").count
-    university_count = School.where("category=?", "Primary").count
+    #featured schools code
+    random_offset = rand(5)
+    @schools = School.offset(random_offset).paginate(page: params[:page], per_page:10)
 
-  primary_random_offset = rand(primary_count)
-  secondary_random_offset = rand(secondary_count)
-  university_random_offset = rand(university_count)
+    if @lat_lng.nil?
+      #prompt the user to allow location access
+    else
+      @nearby_schools = School.near(@lat_lng, 5).paginate(page: params[:page], per_page:10)
+    end
 
-    @school1 = School.offset(primary_random_offset).first
-    @school2 = School.offset(secondary_random_offset).second
-    @school3 = School.offset(university_random_offset).third
   end
 
   def search
