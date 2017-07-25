@@ -1,26 +1,25 @@
 
+
+
+<!-- Test div below -->
 <div class="content">
-   <div class="container">
-     <div class="content-grids">
-   <% @schools.each do |school| %>
-      <% if school.approved? %> 
-      <% link_to school_path(school) do %>
-       <div class="col-md-4 content-grid1">
+  <div class="container">
+    <% @schools.each do |school| %>
+      <div class="row" style="height: 300px;">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <% if !school.picture_url.nil? %>
             <%= image_tag(school.picture_url(:thumb))%>
-         <% else %>
-            <%= image_tag("school_children.jpg")%>
-         <% end %>
-         <h3><%= school.name %></h3>
-         <p><%= truncate(school.description, length: 100) %></p>
-         <p> State:  <%= school.location  %> </p>
-        <!--  <%= link_to "Learn more...", controller: 'schools', action: 'show', id: school.id %> -->
-       </div>
-       <% end %>
-        <% end %>
-       <% end %>
-       <div class="clearfix"></div>
-     </div>
-     <%= will_paginate @schools %>
-   </div>
-   </div>
+          <% else %>
+            <%= image_tag("school_children.jpg", size:"200x200")%>
+          <% end %>
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="padding-top: 20px;">
+          <h2><%= school.name %></h2>
+          <p><%= school.address%></p>
+          <p><%= school.category %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

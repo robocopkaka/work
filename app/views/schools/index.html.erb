@@ -1,25 +1,14 @@
 
 <!-- banner -->
 <div class="banner">
-	<ul class="nav nav-pills nav-justified">
-		<li class="active"><a href="#featured-schools" data-toggle="tab">Featured Schools</a></li>
-		<li><a href="#nearby-schools" data-toggle="tab">Nearby</a></li>
-	</ul>
-
-	 <div class="tab-content">
-	 	<div class="tab-pane" id="featured-schools">
-	 		<%= render 'schools/school', :locals => {@schools => @schools} %>
-	 	</div>
-	 	<div class="tab-pane" id="nearby-schools">
-	 		<%= render 'schools/school', :locals => {@schools => @nearby_schools} %>
-	 	</div>
-	 </div>
+	
 </div>
 <!-- //banner -->
 
 <!-- content -->
 <div class="content">
 	 <div class="container">
+	 	<%= render 'schools/school' %>
 	 </div>
 </div>
 <!--- //content--->

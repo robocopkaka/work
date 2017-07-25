@@ -61,13 +61,19 @@ class SchoolsController < ApplicationController
   	end
     #featured schools code
     random_offset = rand(5)
-    @schools = School.offset(random_offset).paginate(page: params[:page], per_page:10)
+    @schools = School.select{|school| school.approved?}.paginate(page: params[:page])
 
     if @lat_lng.nil?
-      #prompt the user to allow location access
+      #prompt for location access
     else
-      @nearby_schools = School.near(@lat_lng, 5).paginate(page: params[:page], per_page:10)
+      @nearby_schools = School.near(@lat_lng, 5)
     end
+
+    # if @lat_lng.nil?
+    #   #prompt the user to allow location access
+    # else
+    #   @nearby_schools = School.near(@lat_lng, 5).paginate(page: params[:page], per_page:10)
+    # end
 
   end
 
